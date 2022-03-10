@@ -1,0 +1,2015 @@
+22-03-02 13:01:59  |Portal| Removing stale pidfile /home/maximiliano/mudDev/mygame/server/portal.pid
+22-03-02 13:01:59  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-02 13:02:00  |Portal| Loaded.
+22-03-02 13:02:00  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-02 13:02:00  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-02 13:02:00  |Portal| AMP starting on 4006
+22-03-02 13:02:00  |Portal| Telnet starting on 4000
+22-03-02 13:02:00  |Portal| Websocket starting on 4002
+22-03-02 13:02:00  |Portal| Webserver-proxy starting on 4001
+22-03-02 13:02:00  |Portal| Portal starting server ... 
+22-03-02 13:17:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33528)
+22-03-02 13:17:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33530)
+22-03-02 13:17:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33534)
+22-03-02 13:17:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33532)
+22-03-02 13:17:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33538)
+22-03-02 13:17:16  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33536)
+22-03-02 13:18:16  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33540)
+22-03-02 13:19:28  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/application/app.py", line 306, in runReactorWithLogging
+	    reactor.run()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1318, in run
+	    self.mainLoop()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1331, in mainLoop
+	    reactorBaseSelf.doIteration(t)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/epollreactor.py", line 244, in doPoll
+	    log.callWithLogger(selectable, _drdw, selectable, fd, event)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 699, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, inRead)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 300, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 308, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 507, in connectionLost
+	    self._commonConnection.connectionLost(self, reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 325, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 659, in connectionLost
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-02 13:19:33  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/application/app.py", line 306, in runReactorWithLogging
+	    reactor.run()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1318, in run
+	    self.mainLoop()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1331, in mainLoop
+	    reactorBaseSelf.doIteration(t)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/epollreactor.py", line 244, in doPoll
+	    log.callWithLogger(selectable, _drdw, selectable, fd, event)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 699, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, inRead)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 300, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 308, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 507, in connectionLost
+	    self._commonConnection.connectionLost(self, reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 325, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 659, in connectionLost
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-02 13:24:40  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33564)
+22-03-02 13:24:40  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33568)
+22-03-02 13:24:40  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33570)
+22-03-02 13:24:40  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33574)
+22-03-02 13:24:40  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33572)
+22-03-02 13:26:02  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33576)
+22-03-02 13:31:14  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33590)
+22-03-02 13:31:14  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33588)
+22-03-02 14:05:25  |Portal| Portal starting server ... 
+22-03-02 14:16:24  |Portal| Portal starting server ... 
+22-03-02 14:17:53  |Portal| Portal starting server ... 
+22-03-02 14:19:34  |Portal| Portal starting server ... 
+22-03-02 15:20:03  |Portal| Portal starting server ... 
+22-03-02 15:25:36  |Portal| Portal starting server ... 
+22-03-02 15:27:33  |Portal| Portal starting server ... 
+22-03-02 15:33:37  |Portal| Portal starting server ... 
+22-03-02 16:06:03  |Portal| Portal starting server ... 
+22-03-02 16:07:34  |Portal| Portal starting server ... 
+22-03-02 16:21:21  |Portal| Portal starting server ... 
+22-03-02 16:23:53  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-02 16:23:53  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-02 16:24:31  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-02 16:24:31  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-02 16:26:37  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=33738)
+22-03-02 18:45:22  |Portal| (TCP Port 4001 Closed)
+22-03-02 18:45:22  |Portal| (TCP Port 4002 Closed)
+22-03-02 18:45:22  |Portal| (TCP Port 4000 Closed)
+22-03-02 18:45:22  |Portal| (TCP Port 4006 Closed)
+22-03-02 18:45:22  |Portal| Main loop terminated.
+22-03-02 18:45:22  |Portal| Server Shut Down.
+22-03-03 14:33:56  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-03 14:33:58  |Portal| Loaded.
+22-03-03 14:33:58  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-03 14:33:58  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-03 14:33:58  |Portal| AMP starting on 4006
+22-03-03 14:33:58  |Portal| Telnet starting on 4000
+22-03-03 14:33:58  |Portal| Websocket starting on 4002
+22-03-03 14:33:58  |Portal| Webserver-proxy starting on 4001
+22-03-03 14:33:58  |Portal| Portal starting server ... 
+22-03-03 14:36:17  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=54328)
+22-03-03 14:36:18  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=54330)
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:12  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 14:37:14  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-03 16:17:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=54366)
+22-03-03 17:21:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=54368)
+22-03-03 17:24:49  |Portal| Portal starting server ... 
+22-03-03 17:25:40  |Portal| Portal starting server ... 
+22-03-03 17:26:37  |Portal| Portal starting server ... 
+22-03-03 17:28:49  |Portal| Portal starting server ... 
+22-03-03 17:30:03  |Portal| Portal starting server ... 
+22-03-03 17:32:21  |Portal| Portal starting server ... 
+22-03-03 17:34:41  |Portal| Portal starting server ... 
+22-03-03 17:38:08  |Portal| Portal starting server ... 
+22-03-03 17:39:39  |Portal| Portal starting server ... 
+22-03-03 17:41:16  |Portal| Portal starting server ... 
+22-03-03 17:43:42  |Portal| Portal starting server ... 
+22-03-03 17:46:14  |Portal| Portal starting server ... 
+22-03-03 17:53:21  |Portal| Portal starting server ... 
+22-03-03 17:54:56  |Portal| Portal starting server ... 
+22-03-03 17:55:34  |Portal| Portal starting server ... 
+22-03-03 18:38:06  |Portal| (TCP Port 4001 Closed)
+22-03-03 18:38:06  |Portal| (TCP Port 4002 Closed)
+22-03-03 18:38:06  |Portal| (TCP Port 4000 Closed)
+22-03-03 18:38:06  |Portal| (TCP Port 4006 Closed)
+22-03-03 18:38:06  |Portal| Main loop terminated.
+22-03-03 18:38:06  |Portal| Server Shut Down.
+22-03-04 13:31:16  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-04 13:31:18  |Portal| Loaded.
+22-03-04 13:31:18  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-04 13:31:18  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-04 13:31:18  |Portal| AMP starting on 4006
+22-03-04 13:31:18  |Portal| Telnet starting on 4000
+22-03-04 13:31:18  |Portal| Websocket starting on 4002
+22-03-04 13:31:18  |Portal| Webserver-proxy starting on 4001
+22-03-04 13:31:18  |Portal| Portal starting server ... 
+22-03-04 13:35:55  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-04 13:37:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37980)
+22-03-04 13:37:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37986)
+22-03-04 13:37:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37984)
+22-03-04 13:37:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37990)
+22-03-04 13:37:05  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37982)
+22-03-04 13:37:06  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37988)
+22-03-04 13:39:14  |Portal| Portal starting server ... 
+22-03-04 13:39:58  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37994)
+22-03-04 13:40:39  |Portal| Portal starting server ... 
+22-03-04 13:45:19  |Portal| Portal starting server ... 
+22-03-04 13:58:10  |Portal| Portal starting server ... 
+22-03-04 13:59:01  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/application/app.py", line 306, in runReactorWithLogging
+	    reactor.run()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1318, in run
+	    self.mainLoop()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1331, in mainLoop
+	    reactorBaseSelf.doIteration(t)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/epollreactor.py", line 244, in doPoll
+	    log.callWithLogger(selectable, _drdw, selectable, fd, event)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 699, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, inRead)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 300, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 308, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 507, in connectionLost
+	    self._commonConnection.connectionLost(self, reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 325, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 659, in connectionLost
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-04 13:59:38  |Portal| Portal starting server ... 
+22-03-04 14:00:05  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37998)
+22-03-04 14:01:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38002)
+22-03-04 14:01:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38008)
+22-03-04 14:01:15  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38010)
+22-03-04 14:01:18  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38004)
+22-03-04 14:01:18  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38006)
+22-03-04 14:02:26  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38014)
+22-03-04 14:06:07  |Portal| Portal starting server ... 
+22-03-04 14:08:01  |Portal| Portal starting server ... 
+22-03-04 14:08:55  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=38016)
+22-03-04 14:27:35  |Portal| Portal starting server ... 
+22-03-04 14:32:04  |Portal| Portal starting server ... 
+22-03-04 14:34:59  |Portal| Portal starting server ... 
+22-03-04 14:56:35  |Portal| (TCP Port 4001 Closed)
+22-03-04 14:56:35  |Portal| (TCP Port 4002 Closed)
+22-03-04 14:56:35  |Portal| (TCP Port 4000 Closed)
+22-03-04 14:56:35  |Portal| (TCP Port 4006 Closed)
+22-03-04 14:56:35  |Portal| Main loop terminated.
+22-03-04 14:56:35  |Portal| Server Shut Down.
+22-03-04 15:24:05  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-04 15:24:06  |Portal| Loaded.
+22-03-04 15:24:07  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-04 15:24:07  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-04 15:24:07  |Portal| AMP starting on 4006
+22-03-04 15:24:07  |Portal| Telnet starting on 4000
+22-03-04 15:24:07  |Portal| Websocket starting on 4002
+22-03-04 15:24:07  |Portal| Webserver-proxy starting on 4001
+22-03-04 15:24:07  |Portal| Portal starting server ... 
+22-03-04 18:19:20  |Portal| Removing stale pidfile /home/maximiliano/mudDev/mygame/server/portal.pid
+22-03-04 18:19:20  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-04 18:19:27  |Portal| Loaded.
+22-03-04 18:19:27  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-04 18:19:27  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-04 18:19:27  |Portal| AMP starting on 4006
+22-03-04 18:19:27  |Portal| Telnet starting on 4000
+22-03-04 18:19:27  |Portal| Websocket starting on 4002
+22-03-04 18:19:27  |Portal| Webserver-proxy starting on 4001
+22-03-04 18:19:27  |Portal| Portal starting server ... 
+22-03-04 18:22:29  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-04 18:22:38  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-04 18:22:48  |Portal| dropping connection to peer tcp4:127.0.0.1:41394 with abort=True: WebSocket closing handshake timeout (peer did not finish the closing handshake in time)
+22-03-05 21:32:52  |Portal| Removing stale pidfile /home/maximiliano/mudDev/mygame/server/portal.pid
+22-03-05 21:32:52  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-05 21:33:10  |Portal| Loaded.
+22-03-05 21:33:10  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-05 21:33:10  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-05 21:33:10  |Portal| AMP starting on 4006
+22-03-05 21:33:10  |Portal| Telnet starting on 4000
+22-03-05 21:33:10  |Portal| Websocket starting on 4002
+22-03-05 21:33:10  |Portal| Webserver-proxy starting on 4001
+22-03-05 21:33:27  |Portal| Portal starting server ... 
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x01')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x15')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x01')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\xbd')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x15')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x15')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x01')
+22-03-05 21:36:02  |Portal| [EE] Malformed telnet input: ('Stumped', b'\x15')
+22-03-05 22:27:36  |Portal| (TCP Port 4001 Closed)
+22-03-05 22:27:36  |Portal| (TCP Port 4002 Closed)
+22-03-05 22:27:36  |Portal| (TCP Port 4000 Closed)
+22-03-05 22:27:36  |Portal| (TCP Port 4006 Closed)
+22-03-05 22:27:36  |Portal| Main loop terminated.
+22-03-05 22:27:36  |Portal| Server Shut Down.
+22-03-07 13:29:49  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-07 13:29:52  |Portal| Loaded.
+22-03-07 13:29:52  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-07 13:29:52  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-07 13:29:52  |Portal| AMP starting on 4006
+22-03-07 13:29:52  |Portal| Telnet starting on 4000
+22-03-07 13:29:52  |Portal| Websocket starting on 4002
+22-03-07 13:29:52  |Portal| Webserver-proxy starting on 4001
+22-03-07 13:29:53  |Portal| Portal starting server ... 
+22-03-07 13:41:36  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-07 13:41:37  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-07 13:41:37  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/application/app.py", line 306, in runReactorWithLogging
+	    reactor.run()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1318, in run
+	    self.mainLoop()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1331, in mainLoop
+	    reactorBaseSelf.doIteration(t)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/epollreactor.py", line 244, in doPoll
+	    log.callWithLogger(selectable, _drdw, selectable, fd, event)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 699, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, inRead)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 300, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 308, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 507, in connectionLost
+	    self._commonConnection.connectionLost(self, reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 325, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 659, in connectionLost
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-07 13:42:52  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32916)
+22-03-07 13:42:52  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32910)
+22-03-07 13:42:52  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32912)
+22-03-07 13:42:52  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32914)
+22-03-07 13:42:52  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32906)
+22-03-07 13:43:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32908)
+22-03-07 13:45:58  |Portal| Portal starting server ... 
+22-03-07 13:46:52  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32926)
+22-03-07 13:48:43  |Portal| Portal starting server ... 
+22-03-07 13:51:26  |Portal| Portal starting server ... 
+22-03-07 13:52:19  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32930)
+22-03-07 13:53:26  |Portal| Portal starting server ... 
+22-03-07 13:54:15  |Portal| Portal starting server ... 
+22-03-07 13:56:14  |Portal| Portal starting server ... 
+22-03-07 14:04:37  |Portal| Portal starting server ... 
+22-03-07 14:34:37  |Portal| dropping connection to peer tcp4:127.0.0.1:49558 with abort=True: WebSocket closing handshake timeout (peer did not finish the closing handshake in time)
+22-03-07 14:34:56  |Portal| Portal starting server ... 
+22-03-07 14:36:47  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32932)
+22-03-07 14:37:33  |Portal| Portal starting server ... 
+22-03-07 14:37:49  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-07 14:38:34  |Portal| Portal starting server ... 
+22-03-07 14:38:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=32934)
+22-03-07 14:39:21  |Portal| Portal starting server ... 
+22-03-07 14:44:40  |Portal| Portal starting server ... 
+22-03-07 18:26:24  |Portal| (TCP Port 4001 Closed)
+22-03-07 18:26:24  |Portal| (TCP Port 4002 Closed)
+22-03-07 18:26:24  |Portal| (TCP Port 4000 Closed)
+22-03-07 18:26:24  |Portal| (TCP Port 4006 Closed)
+22-03-07 18:26:24  |Portal| Main loop terminated.
+22-03-07 18:26:24  |Portal| Server Shut Down.
+22-03-08 11:47:57  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-08 11:47:59  |Portal| Loaded.
+22-03-08 11:47:59  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-08 11:47:59  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-08 11:47:59  |Portal| AMP starting on 4006
+22-03-08 11:47:59  |Portal| Telnet starting on 4000
+22-03-08 11:47:59  |Portal| Websocket starting on 4002
+22-03-08 11:47:59  |Portal| Webserver-proxy starting on 4001
+22-03-08 11:47:59  |Portal| Portal starting server ... 
+22-03-08 11:50:03  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=34118)
+22-03-08 12:37:49  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-08 12:37:59  |Portal| Portal starting server ... 
+22-03-08 12:38:34  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=34124)
+22-03-08 12:38:50  |Portal| Portal starting server ... 
+22-03-08 13:18:47  |Portal| Portal starting server ... 
+22-03-08 13:20:27  |Portal| Portal starting server ... 
+22-03-08 15:35:57  |Portal| Portal starting server ... 
+22-03-08 15:41:49  |Portal| Portal starting server ... 
+22-03-08 18:48:06  |Portal| (TCP Port 4001 Closed)
+22-03-08 18:48:06  |Portal| (TCP Port 4002 Closed)
+22-03-08 18:48:06  |Portal| (TCP Port 4000 Closed)
+22-03-08 18:48:06  |Portal| (TCP Port 4006 Closed)
+22-03-08 18:48:06  |Portal| Main loop terminated.
+22-03-08 18:48:06  |Portal| Server Shut Down.
+22-03-09 13:37:30  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-09 13:37:32  |Portal| Loaded.
+22-03-09 13:37:32  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-09 13:37:32  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-09 13:37:32  |Portal| AMP starting on 4006
+22-03-09 13:37:32  |Portal| Telnet starting on 4000
+22-03-09 13:37:32  |Portal| Websocket starting on 4002
+22-03-09 13:37:32  |Portal| Webserver-proxy starting on 4001
+22-03-09 13:37:32  |Portal| Portal starting server ... 
+22-03-09 14:06:43  |Portal| Portal starting server ... 
+22-03-09 14:07:06  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 14:07:14  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 14:07:14  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 14:07:14  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 14:07:14  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 14:07:23  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 14:07:23  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 15:08:46  |Portal| Portal starting server ... 
+22-03-09 17:04:26  |Portal| Portal starting server ... 
+22-03-09 17:05:59  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37208)
+22-03-09 17:05:59  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37210)
+22-03-09 17:05:59  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37200)
+22-03-09 17:05:59  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37202)
+22-03-09 17:06:00  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37204)
+22-03-09 17:06:01  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37206)
+22-03-09 17:07:43  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37212)
+22-03-09 17:10:42  |Portal| Portal starting server ... 
+22-03-09 17:11:25  |Portal| Portal starting server ... 
+22-03-09 17:11:36  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37218)
+22-03-09 17:12:15  |Portal| Portal starting server ... 
+22-03-09 17:13:00  |Portal| Portal starting server ... 
+22-03-09 17:14:21  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37220)
+22-03-09 17:30:05  |Portal| Portal starting server ... 
+22-03-09 17:31:20  |Portal| (TCP Port 4001 Closed)
+22-03-09 17:31:20  |Portal| (TCP Port 4002 Closed)
+22-03-09 17:31:20  |Portal| (TCP Port 4000 Closed)
+22-03-09 17:31:20  |Portal| (TCP Port 4006 Closed)
+22-03-09 17:31:20  |Portal| Main loop terminated.
+22-03-09 17:31:20  |Portal| Server Shut Down.
+22-03-09 17:31:21  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-03-09 17:31:22  |Portal| Loaded.
+22-03-09 17:31:22  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-09 17:31:22  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-09 17:31:22  |Portal| AMP starting on 4006
+22-03-09 17:31:22  |Portal| Telnet starting on 4000
+22-03-09 17:31:22  |Portal| Websocket starting on 4002
+22-03-09 17:31:22  |Portal| Webserver-proxy starting on 4001
+22-03-09 17:31:22  |Portal| Portal starting server ... 
+22-03-09 17:32:12  |Portal| Portal starting server ... 
+22-03-09 17:32:36  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37226)
+22-03-09 17:36:21  |Portal| Portal starting server ... 
+22-03-09 17:36:27  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:36:27  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/application/app.py", line 306, in runReactorWithLogging
+	    reactor.run()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1318, in run
+	    self.mainLoop()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/base.py", line 1331, in mainLoop
+	    reactorBaseSelf.doIteration(t)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/epollreactor.py", line 244, in doPoll
+	    log.callWithLogger(selectable, _drdw, selectable, fd, event)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 699, in _doReadOrWrite
+	    self._disconnectSelectable(selectable, why, inRead)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 300, in _disconnectSelectable
+	    selectable.readConnectionLost(f)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 308, in readConnectionLost
+	    self.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 507, in connectionLost
+	    self._commonConnection.connectionLost(self, reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 325, in connectionLost
+	    protocol.connectionLost(reason)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 659, in connectionLost
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:36:27  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:36:31  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:36:32  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:58:30  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:58:31  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 17:58:32  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 18:32:15  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 18:32:44  |Portal| Portal starting server ... 
+22-03-09 18:33:17  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37256)
+22-03-09 18:35:10  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37262)
+22-03-09 18:37:22  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37264)
+22-03-09 18:57:16  |Portal| Portal starting server ... 
+22-03-09 18:58:27  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37270)
+22-03-09 18:59:54  |Portal| Portal starting server ... 
+22-03-09 19:00:02  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:00:10  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:00:10  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:00:11  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:01:01  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:01:02  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:02:25  |Portal| Portal starting server ... 
+22-03-09 19:03:12  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37294)
+22-03-09 19:10:05  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:10:05  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:10:05  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:11:06  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=37306)
+22-03-09 19:27:10  |Portal| Portal starting server ... 
+22-03-09 19:27:17  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:27:24  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:27:24  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:27:24  |Portal| Unhandled Error
+	Traceback (most recent call last):
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 101, in callWithLogger
+	    return callWithContext({"system": lp}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/log.py", line 85, in callWithContext
+	    return context.call({ILogContext: newCtx}, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 118, in callWithContext
+	    return self.currentContext().callWithContext(ctx, func, *args, **kw)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/python/context.py", line 83, in callWithContext
+	    return func(*args, **kw)
+	--- <exception caught here> ---
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/posixbase.py", line 686, in _doReadOrWrite
+	    why = selectable.doRead()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 247, in doRead
+	    return self._dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/internet/tcp.py", line 252, in _dataReceived
+	    rval = self.protocol.dataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/protocols/basic.py", line 554, in dataReceived
+	    why = self.rawDataReceived(data)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 706, in rawDataReceived
+	    self.handleResponseEnd()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/proxy.py", line 82, in handleResponseEnd
+	    self.father.finish()
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/server.py", line 279, in finish
+	    return http.Request.finish(self)
+	  File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/twisted/web/http.py", line 1131, in finish
+	    raise RuntimeError(
+	builtins.RuntimeError: Request.finish called on a request after its connection was lost; use Request.notifyFinish to keep track of this.
+	
+22-03-09 19:29:28  |Portal| (TCP Port 4001 Closed)
+22-03-09 19:29:28  |Portal| (TCP Port 4002 Closed)
+22-03-09 19:29:28  |Portal| (TCP Port 4000 Closed)
+22-03-09 19:29:28  |Portal| (TCP Port 4006 Closed)
+22-03-09 19:29:28  |Portal| Main loop terminated.
+22-03-09 19:29:28  |Portal| Server Shut Down.

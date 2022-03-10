@@ -1,0 +1,72 @@
+22-02-14 14:47:57  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-02-14 14:47:58  |Portal| Loaded.
+22-02-14 14:47:58  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-02-14 14:47:58  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-02-14 14:47:58  |Portal| AMP starting on 4006
+22-02-14 14:47:58  |Portal| Telnet starting on 4000
+22-02-14 14:47:58  |Portal| Websocket starting on 4002
+22-02-14 14:47:58  |Portal| Webserver-proxy starting on 4001
+22-02-14 14:47:59  |Portal| Portal starting server ... 
+22-02-14 14:48:01  |Portal| Portal starting server ... 
+22-02-14 15:04:53  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48014)
+22-02-14 15:04:53  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48016)
+22-02-14 15:08:02  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48018)
+22-02-14 15:08:02  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48022)
+22-02-14 15:08:02  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48024)
+22-02-14 15:08:04  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=48020)
+22-02-14 15:10:50  |Portal| (TCP Port 4001 Closed)
+22-02-14 15:10:50  |Portal| (TCP Port 4002 Closed)
+22-02-14 15:10:50  |Portal| (TCP Port 4000 Closed)
+22-02-14 15:10:50  |Portal| (TCP Port 4006 Closed)
+22-02-14 15:10:50  |Portal| Main loop terminated.
+22-02-14 15:10:50  |Portal| Server Shut Down.
+22-02-17 17:03:34  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-02-17 17:03:36  |Portal| Loaded.
+22-02-17 17:03:36  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-02-17 17:03:36  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-02-17 17:03:36  |Portal| AMP starting on 4006
+22-02-17 17:03:36  |Portal| Telnet starting on 4000
+22-02-17 17:03:36  |Portal| Websocket starting on 4002
+22-02-17 17:03:36  |Portal| Webserver-proxy starting on 4001
+22-02-17 17:03:36  |Portal| Portal starting server ... 
+22-02-17 17:08:02  |Portal| (TCP Port 4001 Closed)
+22-02-17 17:08:02  |Portal| (TCP Port 4002 Closed)
+22-02-17 17:08:02  |Portal| (TCP Port 4000 Closed)
+22-02-17 17:08:02  |Portal| (TCP Port 4006 Closed)
+22-02-17 17:08:02  |Portal| Main loop terminated.
+22-02-17 17:08:02  |Portal| Server Shut Down.
+22-02-17 17:37:36  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-02-17 17:37:38  |Portal| Loaded.
+22-02-17 17:37:38  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-02-17 17:37:38  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-02-17 17:37:38  |Portal| AMP starting on 4006
+22-02-17 17:37:38  |Portal| Telnet starting on 4000
+22-02-17 17:37:38  |Portal| Websocket starting on 4002
+22-02-17 17:37:38  |Portal| Webserver-proxy starting on 4001
+22-02-17 17:37:38  |Portal| Portal starting server ... 
+22-02-17 17:39:16  |Portal| Timing out client: IPv4Address(type='TCP', host='192.168.0.3', port=52514)
+22-02-17 17:39:16  |Portal| Timing out client: IPv4Address(type='TCP', host='192.168.0.3', port=52515)
+22-02-17 18:14:05  |Portal| (TCP Port 4001 Closed)
+22-02-17 18:14:05  |Portal| (TCP Port 4002 Closed)
+22-02-17 18:14:05  |Portal| (TCP Port 4000 Closed)
+22-02-17 18:14:05  |Portal| (TCP Port 4006 Closed)
+22-02-17 18:14:05  |Portal| Main loop terminated.
+22-02-17 18:14:05  |Portal| Server Shut Down.
+22-02-23 13:31:32  |Portal| Loading /home/maximiliano/mudDev/evennia/evennia/server/portal/portal.py...
+22-02-23 13:31:33  |Portal| Loaded.
+22-02-23 13:31:33  |Portal| twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-02-23 13:31:33  |Portal| reactor class: twisted.internet.epollreactor.EPollReactor.
+22-02-23 13:31:33  |Portal| AMP starting on 4006
+22-02-23 13:31:33  |Portal| Telnet starting on 4000
+22-02-23 13:31:33  |Portal| Websocket starting on 4002
+22-02-23 13:31:33  |Portal| Webserver-proxy starting on 4001
+22-02-23 13:31:34  |Portal| Portal starting server ... 
+22-02-23 13:31:37  |Portal| Portal starting server ... 
+22-02-23 13:36:05  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52940)
+22-02-23 13:57:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52962)
+22-02-23 13:57:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52954)
+22-02-23 13:57:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52950)
+22-02-23 13:57:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52958)
+22-02-23 13:57:48  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52946)
+22-02-23 13:57:50  |Portal| Portal starting server ... 
+22-02-23 13:58:49  |Portal| Timing out client: IPv4Address(type='TCP', host='127.0.0.1', port=52952)
