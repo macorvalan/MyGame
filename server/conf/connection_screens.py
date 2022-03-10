@@ -22,23 +22,15 @@ of the screen is done by the unlogged-in "look" command.
 
 from django.conf import settings
 from evennia import utils
-from AU_ANSI import ANSI_Parser
+from AU_ANSI.AU_ANSI_Screens_001 import AU_ANSI_Screens_0000
 
-GAME_DIR = settings.GAME_DIR + "/AU_ANSI/AU_conn_screen.utf8ans"
-screen_data = ""
 
-with open(GAME_DIR, "r") as ansi_screen:
-    screen_data = ansi_screen.read()
-
-CONNECTION_SCREEN = ANSI_Parser.au_ansi_parser(screen_data)
-
+CONNECTION_SCREEN = AU_ANSI_Screens_0000
 
 
 
 
 # CONNECTION_SCREEN_R = """
-
-
 # |b==============================================================|n
 # Welcome to |g{}|n, version {}!
 

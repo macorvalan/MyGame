@@ -3839,3 +3839,102 @@ Failed to load application: 'tuple' object is not callable
 22-03-09 19:29:28 [..] Server disconnected from the portal.
 22-03-09 19:29:28 Main loop terminated.
 22-03-09 19:29:28 Server Shut Down.
+22-03-10 14:39:09 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-10 14:39:10 Loaded.
+22-03-10 14:39:10 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-10 14:39:10 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-10 14:39:10 Webserver starting on 4005
+22-03-10 14:39:10 Evennia Server successfully started.
+22-03-10 14:39:30 [::] Traceback (most recent call last):
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 815, in _execute_node
+22-03-10 14:39:30 [::]     ret = self._safe_call(node, raw_string, **kwargs)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 773, in _safe_call
+22-03-10 14:39:30 [::]     ret = callback(self.caller, raw_string, **kwargs)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/menu_login.py", line 98, in node_enter_username
+22-03-10 14:39:30 [::]     connection_screen = random_string_from_module(_CONNECTION_SCREEN_MODULE)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1388, in random_string_from_module
+22-03-10 14:39:30 [::]     return random.choice(string_from_module(module))
+22-03-10 14:39:30 [::]   File "/usr/lib/python3.8/random.py", line 288, in choice
+22-03-10 14:39:30 [::]     i = self._randbelow(len(seq))
+22-03-10 14:39:30 [::] TypeError: object of type 'NoneType' has no len()
+22-03-10 14:39:30 [::] Traceback (most recent call last):
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-10 14:39:30 [::]     ret = cmd.func()
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/menu_login.py", line 246, in func
+22-03-10 14:39:30 [::]     EvMenu(
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 674, in __init__
+22-03-10 14:39:30 [::]     self.goto(self._startnode, startnode_input, **startnode_kwargs)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 985, in goto
+22-03-10 14:39:30 [::]     nodetext, options = self._execute_node(nodename, raw_string, **kwargs)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 815, in _execute_node
+22-03-10 14:39:30 [::]     ret = self._safe_call(node, raw_string, **kwargs)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 773, in _safe_call
+22-03-10 14:39:30 [::]     ret = callback(self.caller, raw_string, **kwargs)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/menu_login.py", line 98, in node_enter_username
+22-03-10 14:39:30 [::]     connection_screen = random_string_from_module(_CONNECTION_SCREEN_MODULE)
+22-03-10 14:39:30 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1388, in random_string_from_module
+22-03-10 14:39:30 [::]     return random.choice(string_from_module(module))
+22-03-10 14:39:30 [::]   File "/usr/lib/python3.8/random.py", line 288, in choice
+22-03-10 14:39:30 [::]     i = self._randbelow(len(seq))
+22-03-10 14:39:30 [::] TypeError: object of type 'NoneType' has no len()
+22-03-10 14:39:30 [EE] User input was: '__unloggedin_look_command'.
+22-03-10 14:40:29 [..] Server disconnected from the portal.
+22-03-10 14:40:29 Main loop terminated.
+22-03-10 14:40:29 Server Shut Down.
+22-03-10 14:40:29 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-10 14:40:30 Loaded.
+22-03-10 14:40:30 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-10 14:40:30 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-10 14:40:30 Webserver starting on 4005
+22-03-10 14:40:30 Server successfully reloaded.
+22-03-10 14:43:45 [..] Server disconnected from the portal.
+22-03-10 14:43:45 Main loop terminated.
+22-03-10 14:43:45 Server Shut Down.
+22-03-10 14:43:45 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-10 14:43:46 Loaded.
+22-03-10 14:43:46 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-10 14:43:46 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-10 14:43:46 Webserver starting on 4005
+22-03-10 14:43:46 Server successfully reloaded.
+22-03-10 14:44:04 [::] Traceback (most recent call last):
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 815, in _execute_node
+22-03-10 14:44:04 [::]     ret = self._safe_call(node, raw_string, **kwargs)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 773, in _safe_call
+22-03-10 14:44:04 [::]     ret = callback(self.caller, raw_string, **kwargs)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/menu_login.py", line 98, in node_enter_username
+22-03-10 14:44:04 [::]     connection_screen = random_string_from_module(_CONNECTION_SCREEN_MODULE)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1388, in random_string_from_module
+22-03-10 14:44:04 [::]     return random.choice(string_from_module(module))
+22-03-10 14:44:04 [::]   File "/usr/lib/python3.8/random.py", line 288, in choice
+22-03-10 14:44:04 [::]     i = self._randbelow(len(seq))
+22-03-10 14:44:04 [::] TypeError: object of type 'NoneType' has no len()
+22-03-10 14:44:04 [::] Traceback (most recent call last):
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-10 14:44:04 [::]     ret = cmd.func()
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/menu_login.py", line 246, in func
+22-03-10 14:44:04 [::]     EvMenu(
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 674, in __init__
+22-03-10 14:44:04 [::]     self.goto(self._startnode, startnode_input, **startnode_kwargs)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 985, in goto
+22-03-10 14:44:04 [::]     nodetext, options = self._execute_node(nodename, raw_string, **kwargs)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 815, in _execute_node
+22-03-10 14:44:04 [::]     ret = self._safe_call(node, raw_string, **kwargs)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/evmenu.py", line 773, in _safe_call
+22-03-10 14:44:04 [::]     ret = callback(self.caller, raw_string, **kwargs)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/menu_login.py", line 98, in node_enter_username
+22-03-10 14:44:04 [::]     connection_screen = random_string_from_module(_CONNECTION_SCREEN_MODULE)
+22-03-10 14:44:04 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1388, in random_string_from_module
+22-03-10 14:44:04 [::]     return random.choice(string_from_module(module))
+22-03-10 14:44:04 [::]   File "/usr/lib/python3.8/random.py", line 288, in choice
+22-03-10 14:44:04 [::]     i = self._randbelow(len(seq))
+22-03-10 14:44:04 [::] TypeError: object of type 'NoneType' has no len()
+22-03-10 14:44:04 [EE] User input was: '__unloggedin_look_command'.
+22-03-10 14:54:42 [..] Server disconnected from the portal.
+22-03-10 14:54:42 Main loop terminated.
+22-03-10 14:54:42 Server Shut Down.
+22-03-10 14:54:42 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-10 14:54:43 Loaded.
+22-03-10 14:54:43 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-10 14:54:43 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-10 14:54:43 Webserver starting on 4005
+22-03-10 14:54:43 Server successfully reloaded.
