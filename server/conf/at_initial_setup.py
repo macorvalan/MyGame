@@ -13,7 +13,12 @@ will be QUIETLY ignored, so make sure to check it well to make sure it
 does what you expect it to.
 
 """
+from evennia.utils import search, dedent, create
 
 
 def at_initial_setup():
+    chargen_room = create.create_object(typeclass='CoC.CoC_Rooms.CoCCharGenRoom', key='Investigator Room')
+    chargen_room.db.desc = dedent('Here you con create your investigator.')
+    chargen_room.tags.add('default_chargen', category='rooms')
+
     pass

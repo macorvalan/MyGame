@@ -60,6 +60,7 @@ MAX_NR_CHARACTERS = 3
 ######################################################################
 # Settings given in secret_settings.py override those in this file.
 ######################################################################
+
 try:
     from server.conf.secret_settings import *
 except ImportError:

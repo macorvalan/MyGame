@@ -25,7 +25,7 @@ from evennia import utils
 from AU_ANSI.AU_ANSI_Screens_001 import AU_ANSI_Screens_0000
 
 
-CONNECTION_SCREEN = AU_ANSI_Screens_0000
+CONNECTION_SCREEN = AU_ANSI_Screens_0000.strip()
 
 
 

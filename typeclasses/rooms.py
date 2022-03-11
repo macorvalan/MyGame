@@ -26,7 +26,10 @@ class Room(CoCRoom):
 
 class CharGenRoom(CoCCharGenRoom):
     """
+    Character Generation Room.
 
+    Room used to generate the investigator for the first time
+    or improve skills.
     """
     def at_object_creation(self):
         super(CharGenRoom, self).at_object_creation()
