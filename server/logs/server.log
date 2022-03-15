@@ -58,3 +58,868 @@
 22-03-11 15:09:47 [..] Logged in: macorvalan(account 1) 127.0.0.1 (1 session(s) total)
 22-03-11 15:10:05 [SS] Puppet Success: (Caller: macorvalan(account 1), Target: macorvalan, IP: 127.0.0.1).
 22-03-11 15:10:46 [..] Logged out: macorvalan(account 1) 127.0.0.1 (0 sessions(s) remaining) (quit)
+22-03-11 18:41:46 [..] Logged in: macorvalan(account 1) 127.0.0.1 (1 session(s) total)
+22-03-11 18:41:56 [SS] Puppet Success: (Caller: macorvalan(account 1), Target: macorvalan, IP: 127.0.0.1).
+22-03-11 18:42:00 [..] Server disconnected from the portal.
+22-03-11 18:42:00 Main loop terminated.
+22-03-11 18:42:00 Server Shut Down.
+22-03-11 18:42:00 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-11 18:42:01 Loaded.
+22-03-11 18:42:01 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-11 18:42:01 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-11 18:42:01 Webserver starting on 4005
+22-03-11 18:42:01 Server successfully reloaded.
+22-03-11 18:44:56 [..] Server disconnected from the portal.
+22-03-11 18:44:56 Main loop terminated.
+22-03-11 18:44:56 Server Shut Down.
+22-03-11 18:44:56 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-11 18:44:57 Loaded.
+22-03-11 18:44:57 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-11 18:44:57 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-11 18:44:57 Webserver starting on 4005
+22-03-11 18:44:57 Server successfully reloaded.
+22-03-11 18:47:30 [..] Server disconnected from the portal.
+22-03-11 18:47:30 Main loop terminated.
+22-03-11 18:47:30 Server Shut Down.
+22-03-11 18:47:30 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-11 18:47:31 Loaded.
+22-03-11 18:47:31 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-11 18:47:31 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-11 18:47:31 Webserver starting on 4005
+22-03-11 18:47:31 Server successfully reloaded.
+22-03-11 18:49:45 [..] Server disconnected from the portal.
+22-03-11 18:49:45 Main loop terminated.
+22-03-11 18:49:45 Server Shut Down.
+22-03-11 18:49:45 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-11 18:49:46 Loaded.
+22-03-11 18:49:46 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-11 18:49:46 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-11 18:49:46 Webserver starting on 4005
+22-03-11 18:49:46 Server successfully reloaded.
+22-03-11 18:49:50 [::] Traceback (most recent call last):
+22-03-11 18:49:50 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-11 18:49:50 [::]     ret = cmd.func()
+22-03-11 18:49:50 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-11 18:49:50 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-11 18:49:50 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-11 18:49:50 [::]     description = target.return_appearance(self, **kwargs)
+22-03-11 18:49:50 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-11 18:49:50 [::]     text = super.retun_appaerance(looker)
+22-03-11 18:49:50 [::] AttributeError: type object 'super' has no attribute 'retun_appaerance'
+22-03-11 18:49:50 [EE] User input was: 'look box'.
+22-03-11 18:51:08 [..] Server disconnected from the portal.
+22-03-11 18:51:08 Main loop terminated.
+22-03-11 18:51:08 Server Shut Down.
+22-03-11 18:51:08 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-11 18:51:09 Loaded.
+22-03-11 18:51:09 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-11 18:51:09 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-11 18:51:09 Webserver starting on 4005
+22-03-11 18:51:09 Server successfully reloaded.
+22-03-11 18:51:13 [::] Traceback (most recent call last):
+22-03-11 18:51:13 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-11 18:51:13 [::]     ret = cmd.func()
+22-03-11 18:51:13 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-11 18:51:13 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-11 18:51:13 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-11 18:51:13 [::]     description = target.return_appearance(self, **kwargs)
+22-03-11 18:51:13 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-11 18:51:13 [::]     text = super.retun_appaerance(looker)
+22-03-11 18:51:13 [::] AttributeError: type object 'super' has no attribute 'retun_appaerance'
+22-03-11 18:51:13 [EE] User input was: 'look box'.
+22-03-11 18:52:13 [..] Server disconnected from the portal.
+22-03-11 18:52:13 Main loop terminated.
+22-03-11 18:52:13 Server Shut Down.
+22-03-11 18:52:13 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-11 18:52:14 Loaded.
+22-03-11 18:52:14 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-11 18:52:14 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-11 18:52:14 Webserver starting on 4005
+22-03-11 18:52:14 Server successfully reloaded.
+22-03-11 18:52:20 [::] Traceback (most recent call last):
+22-03-11 18:52:20 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-11 18:52:20 [::]     ret = cmd.func()
+22-03-11 18:52:20 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-11 18:52:20 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-11 18:52:20 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-11 18:52:20 [::]     description = target.return_appearance(self, **kwargs)
+22-03-11 18:52:20 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-11 18:52:20 [::]     text = super.retun_appearance(looker)
+22-03-11 18:52:20 [::] AttributeError: type object 'super' has no attribute 'retun_appearance'
+22-03-11 18:52:20 [EE] User input was: 'look box'.
+22-03-11 18:52:36 [..] Logged out: macorvalan(account 1) 127.0.0.1 (0 sessions(s) remaining)
+22-03-11 18:52:58 [..] Server disconnected from the portal.
+22-03-11 18:52:58 Main loop terminated.
+22-03-11 18:52:58 Server Shut Down.
+22-03-14 11:29:10 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 11:29:13 Loaded.
+22-03-14 11:29:13 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 11:29:13 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 11:29:13 Webserver starting on 4005
+22-03-14 11:29:13 Evennia Server successfully started.
+22-03-14 11:29:52 [..] Logged in: macorvalan(account 1) 127.0.0.1 (1 session(s) total)
+22-03-14 11:30:06 [SS] Puppet Success: (Caller: macorvalan(account 1), Target: macorvalan, IP: 127.0.0.1).
+22-03-14 11:30:11 [::] Traceback (most recent call last):
+22-03-14 11:30:11 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 11:30:11 [::]     ret = cmd.func()
+22-03-14 11:30:11 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-14 11:30:11 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-14 11:30:11 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-14 11:30:11 [::]     description = target.return_appearance(self, **kwargs)
+22-03-14 11:30:11 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-14 11:30:11 [::]     text = super.return_appearance(looker)
+22-03-14 11:30:11 [::] AttributeError: type object 'super' has no attribute 'return_appearance'
+22-03-14 11:30:11 [EE] User input was: 'look caja'.
+22-03-14 11:30:15 [::] Traceback (most recent call last):
+22-03-14 11:30:15 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 11:30:15 [::]     ret = cmd.func()
+22-03-14 11:30:15 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-14 11:30:15 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-14 11:30:15 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-14 11:30:15 [::]     description = target.return_appearance(self, **kwargs)
+22-03-14 11:30:15 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-14 11:30:15 [::]     text = super.return_appearance(looker)
+22-03-14 11:30:15 [::] AttributeError: type object 'super' has no attribute 'return_appearance'
+22-03-14 11:30:15 [EE] User input was: 'look box'.
+22-03-14 11:30:27 [::] Traceback (most recent call last):
+22-03-14 11:30:27 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 11:30:27 [::]     ret = cmd.func()
+22-03-14 11:30:27 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-14 11:30:27 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-14 11:30:27 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-14 11:30:27 [::]     description = target.return_appearance(self, **kwargs)
+22-03-14 11:30:27 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-14 11:30:27 [::]     text = super.return_appearance(looker)
+22-03-14 11:30:27 [::] AttributeError: type object 'super' has no attribute 'return_appearance'
+22-03-14 11:30:27 [EE] User input was: 'look pesa'.
+22-03-14 11:30:55 [::] Traceback (most recent call last):
+22-03-14 11:30:55 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 11:30:55 [::]     ret = cmd.func()
+22-03-14 11:30:55 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-14 11:30:55 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-14 11:30:55 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-14 11:30:55 [::]     description = target.return_appearance(self, **kwargs)
+22-03-14 11:30:55 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-14 11:30:55 [::]     text = super.return_appearance(looker)
+22-03-14 11:30:55 [::] AttributeError: type object 'super' has no attribute 'return_appearance'
+22-03-14 11:30:55 [EE] User input was: 'look pesa'.
+22-03-14 11:46:51 [..] Server disconnected from the portal.
+22-03-14 11:46:51 Main loop terminated.
+22-03-14 11:46:51 Server Shut Down.
+22-03-14 11:46:52 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 11:46:56 Loaded.
+22-03-14 11:46:56 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 11:46:56 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 11:46:56 Webserver starting on 4005
+22-03-14 11:46:56 Server successfully reloaded.
+22-03-14 11:47:52 [..] Server disconnected from the portal.
+22-03-14 11:47:52 Main loop terminated.
+22-03-14 11:47:52 Server Shut Down.
+22-03-14 11:47:53 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 11:47:53 Loaded.
+22-03-14 11:47:53 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 11:47:53 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 11:47:53 Webserver starting on 4005
+22-03-14 11:47:53 Server successfully reloaded.
+22-03-14 11:48:00 [::] Traceback (most recent call last):
+22-03-14 11:48:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 11:48:00 [::]     ret = cmd.func()
+22-03-14 11:48:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/general.py", line 86, in func
+22-03-14 11:48:00 [::]     self.msg((caller.at_look(target), {"type": "look"}), options=None)
+22-03-14 11:48:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/objects/objects.py", line 1735, in at_look
+22-03-14 11:48:00 [::]     description = target.return_appearance(self, **kwargs)
+22-03-14 11:48:00 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 167, in return_appearance
+22-03-14 11:48:00 [::]     text = super().return_appearance(looker)
+22-03-14 11:48:00 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Objects.py", line 160, in return_appearance
+22-03-14 11:48:00 [::]     return text + self.db.prueba
+22-03-14 11:48:00 [::] TypeError: can only concatenate str (not "int") to str
+22-03-14 11:48:00 [EE] User input was: 'look caja'.
+22-03-14 11:48:26 [..] Server disconnected from the portal.
+22-03-14 11:48:26 Main loop terminated.
+22-03-14 11:48:26 Server Shut Down.
+22-03-14 11:48:27 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 11:48:27 Loaded.
+22-03-14 11:48:27 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 11:48:27 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 11:48:27 Webserver starting on 4005
+22-03-14 11:48:27 Server successfully reloaded.
+22-03-14 11:50:07 [..] Server disconnected from the portal.
+22-03-14 11:50:07 Main loop terminated.
+22-03-14 11:50:07 Server Shut Down.
+22-03-14 11:50:08 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 11:50:08 Loaded.
+22-03-14 11:50:08 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 11:50:08 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 11:50:08 Webserver starting on 4005
+22-03-14 11:50:08 Server successfully reloaded.
+22-03-14 12:36:41 [..] Server disconnected from the portal.
+22-03-14 12:36:41 Main loop terminated.
+22-03-14 12:36:41 Server Shut Down.
+22-03-14 12:36:42 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 12:36:42 Loaded.
+22-03-14 12:36:42 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 12:36:42 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 12:36:42 Webserver starting on 4005
+22-03-14 12:36:42 Server successfully reloaded.
+22-03-14 12:45:42 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.
+22-03-14 14:19:08 [..] Server disconnected from the portal.
+22-03-14 14:19:08 Main loop terminated.
+22-03-14 14:19:08 Server Shut Down.
+22-03-14 14:19:08 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 14:19:09 Loaded.
+22-03-14 14:19:09 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 14:19:09 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 14:19:09 Webserver starting on 4005
+22-03-14 14:19:09 Server successfully reloaded.
+22-03-14 15:10:23 [..] Server disconnected from the portal.
+22-03-14 15:10:23 Main loop terminated.
+22-03-14 15:10:23 Server Shut Down.
+22-03-14 15:10:24 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 15:10:25 Loaded.
+22-03-14 15:10:25 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 15:10:25 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 15:10:25 Webserver starting on 4005
+22-03-14 15:10:25 Server successfully reloaded.
+22-03-14 15:19:25 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.
+22-03-14 15:31:24 [..] Logged out: macorvalan(account 1) 127.0.0.1 (0 sessions(s) remaining) (quit)
+22-03-14 15:32:17 [SS] Password successfully changed for aguirre(account None).
+22-03-14 15:32:17 [SS] Account Created: aguirre(account 2) (IP: 127.0.0.1).
+22-03-14 15:32:17 [..] Logged in: aguirre(account 2) 127.0.0.1 (1 session(s) total)
+22-03-14 15:32:30 [SS] Character Created: Harvey Walters (Caller: aguirre(account 2), IP: 127.0.0.1).
+22-03-14 15:32:40 [SS] Puppet Success: (Caller: aguirre(account 2), Target: Harvey Walters, IP: 127.0.0.1).
+22-03-14 15:54:00 [..] Logged out: aguirre(account 2) 127.0.0.1 (0 sessions(s) remaining) (quit)
+22-03-14 15:56:33 [SS] Password successfully changed for mgomez(account None).
+22-03-14 15:56:33 [SS] Account Created: mgomez(account 3) (IP: 127.0.0.1).
+22-03-14 15:56:33 [SS] Throttle Activated: Too many accounts being created. (IP: 127.0.0.1, 2 hits in 600 seconds.)
+22-03-14 15:56:33 [..] Logged in: mgomez(account 3) 127.0.0.1 (1 session(s) total)
+22-03-14 15:56:54 [SS] Character Created: Anna Pacula (Caller: mgomez(account 3), IP: 127.0.0.1).
+22-03-14 15:56:58 [SS] Puppet Success: (Caller: mgomez(account 3), Target: Anna Pacula, IP: 127.0.0.1).
+22-03-14 15:57:59 [..] Logged out: mgomez(account 3) 127.0.0.1 (0 sessions(s) remaining)
+22-03-14 15:58:24 [..] Logged in: mgomez(account 3) 127.0.0.1 (1 session(s) total)
+22-03-14 15:59:06 [..] Logged in: macorvalan(account 1) 127.0.0.1 (1 session(s) total)
+22-03-14 15:59:13 [SS] Puppet Success: (Caller: macorvalan(account 1), Target: macorvalan, IP: 127.0.0.1).
+22-03-14 15:59:25 [SS] Puppet Success: (Caller: mgomez(account 3), Target: Anna Pacula, IP: 127.0.0.1).
+22-03-14 16:37:44 [EE] 
+22-03-14 16:37:44 [EE] Could not load typeclass 'typeclass.characters.Character'
+22-03-14 16:37:44 [EE] Paths searched:
+22-03-14 16:37:44 [EE]     typeclass.characters.Character
+22-03-14 16:37:44 [EE]     typeclasses.typeclass.characters.Character
+22-03-14 16:37:44 [EE]     evennia.typeclass.characters.Character
+22-03-14 16:37:44 [EE]     evennia.contrib.typeclass.characters.Character
+22-03-14 16:37:44 [EE]     evennia.contrib.tutorial_examples.typeclass.characters.Character
+22-03-14 16:37:44 [::] Traceback (most recent call last):
+22-03-14 16:37:44 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 647, in _run_command
+22-03-14 16:37:44 [::]     _progressive_cmd_run(cmd, ret)
+22-03-14 16:37:44 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 226, in _progressive_cmd_run
+22-03-14 16:37:44 [::]     value = next(generator)
+22-03-14 16:37:44 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/default/building.py", line 2126, in func
+22-03-14 16:37:44 [::]     obj.swap_typeclass(
+22-03-14 16:37:44 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 585, in swap_typeclass
+22-03-14 16:37:44 [::]     new_typeclass = class_from_module(new_typeclass, defaultpaths=settings.TYPECLASS_PATHS)
+22-03-14 16:37:44 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1495, in class_from_module
+22-03-14 16:37:44 [::]     raise ImportError(err)
+22-03-14 16:37:44 [::] ImportError: 
+22-03-14 16:37:44 [::] Could not load typeclass 'typeclass.characters.Character'
+22-03-14 16:37:44 [::] Paths searched:
+22-03-14 16:37:44 [::]     typeclass.characters.Character
+22-03-14 16:37:44 [::]     typeclasses.typeclass.characters.Character
+22-03-14 16:37:44 [::]     evennia.typeclass.characters.Character
+22-03-14 16:37:44 [::]     evennia.contrib.typeclass.characters.Character
+22-03-14 16:37:44 [::]     evennia.contrib.tutorial_examples.typeclass.characters.Character
+22-03-14 16:37:44 [EE] User input was: '@type/reset/force me = typeclass.characters.Character'.
+22-03-14 16:48:00 [..] Server disconnected from the portal.
+22-03-14 16:48:00 Main loop terminated.
+22-03-14 16:48:00 Server Shut Down.
+22-03-14 16:48:00 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 16:48:01 Loaded.
+22-03-14 16:48:01 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 16:48:01 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 16:48:01 Webserver starting on 4005
+22-03-14 16:48:01 Server successfully reloaded.
+22-03-14 16:50:38 [..] Server disconnected from the portal.
+22-03-14 16:50:38 Main loop terminated.
+22-03-14 16:50:38 Server Shut Down.
+22-03-14 16:50:38 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 16:50:39 Loaded.
+22-03-14 16:50:39 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 16:50:39 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 16:50:39 Webserver starting on 4005
+22-03-14 16:50:39 Server successfully reloaded.
+22-03-14 16:50:44 /me says, "hola"
+22-03-14 16:53:06 [..] Server disconnected from the portal.
+22-03-14 16:53:06 Main loop terminated.
+22-03-14 16:53:06 Server Shut Down.
+22-03-14 16:53:06 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 16:53:07 Loaded.
+22-03-14 16:53:07 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 16:53:07 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 16:53:07 Webserver starting on 4005
+22-03-14 16:53:07 Server successfully reloaded.
+22-03-14 17:02:07 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.
+22-03-14 17:05:34 [..] Server disconnected from the portal.
+22-03-14 17:05:34 Main loop terminated.
+22-03-14 17:05:34 Server Shut Down.
+22-03-14 17:05:34 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:05:35 Loaded.
+22-03-14 17:05:35 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:05:35 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:05:35 Webserver starting on 4005
+22-03-14 17:05:35 Server successfully reloaded.
+22-03-14 17:14:35 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.
+22-03-14 17:26:12 [..] Server disconnected from the portal.
+22-03-14 17:26:12 Main loop terminated.
+22-03-14 17:26:12 Server Shut Down.
+22-03-14 17:26:12 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:26:13 Loaded.
+22-03-14 17:26:13 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:26:13 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:26:13 Webserver starting on 4005
+22-03-14 17:26:13 Server successfully reloaded.
+22-03-14 17:28:30 [..] Server disconnected from the portal.
+22-03-14 17:28:30 Main loop terminated.
+22-03-14 17:28:30 Server Shut Down.
+22-03-14 17:28:31 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:28:31 Loaded.
+22-03-14 17:28:31 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:28:31 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:28:31 Webserver starting on 4005
+22-03-14 17:28:31 Server successfully reloaded.
+22-03-14 17:29:06 {#1} says, "hola"
+22-03-14 17:29:06 {'#1': macorvalan}
+22-03-14 17:30:06 {#1} says, "texto de say"
+22-03-14 17:30:06 {'#1': macorvalan}
+22-03-14 17:32:29 [..] Server disconnected from the portal.
+22-03-14 17:32:29 Main loop terminated.
+22-03-14 17:32:29 Server Shut Down.
+22-03-14 17:32:29 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:32:30 Loaded.
+22-03-14 17:32:30 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:32:30 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:32:30 Webserver starting on 4005
+22-03-14 17:32:30 Server successfully reloaded.
+22-03-14 17:32:43 {#1} whispers, "hola desde say"
+22-03-14 17:32:43 {'#1': macorvalan}
+22-03-14 17:37:30 [..] Server disconnected from the portal.
+22-03-14 17:37:30 Main loop terminated.
+22-03-14 17:37:30 Server Shut Down.
+22-03-14 17:37:31 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:37:31 Loaded.
+22-03-14 17:37:31 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:37:31 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:37:31 Webserver starting on 4005
+22-03-14 17:37:31 Server successfully reloaded.
+22-03-14 17:37:51 /me says, "hola desde say"
+22-03-14 17:38:13 /anna
+22-03-14 17:39:43 [..] Server disconnected from the portal.
+22-03-14 17:39:43 Main loop terminated.
+22-03-14 17:39:43 Server Shut Down.
+22-03-14 17:39:43 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:39:44 Loaded.
+22-03-14 17:39:44 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:39:44 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:39:44 Webserver starting on 4005
+22-03-14 17:39:44 Server successfully reloaded.
+22-03-14 17:39:51 /me says, "hola desde say"
+22-03-14 17:39:51 [::] Traceback (most recent call last):
+22-03-14 17:39:51 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 17:39:51 [::]     ret = cmd.func()
+22-03-14 17:39:51 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 918, in func
+22-03-14 17:39:51 [::]     send_emote(self.caller, targets, speech, anonymous_add=None)
+22-03-14 17:39:51 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 535, in send_emote
+22-03-14 17:39:51 [::]     for key, (langname, saytext) in language_mapping.items():
+22-03-14 17:39:51 [::] NameError: name 'language_mapping' is not defined
+22-03-14 17:39:51 [EE] User input was: 'say hola desde say'.
+22-03-14 17:40:27 /anna
+22-03-14 17:41:58 [..] Server disconnected from the portal.
+22-03-14 17:41:58 Main loop terminated.
+22-03-14 17:41:58 Server Shut Down.
+22-03-14 17:41:58 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:41:59 Loaded.
+22-03-14 17:41:59 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:41:59 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:41:59 Webserver starting on 4005
+22-03-14 17:41:59 Server successfully reloaded.
+22-03-14 17:42:01 /me says, "hola"
+22-03-14 17:44:56 [..] Server disconnected from the portal.
+22-03-14 17:44:56 Main loop terminated.
+22-03-14 17:44:56 Server Shut Down.
+22-03-14 17:44:56 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:44:57 Loaded.
+22-03-14 17:44:57 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:44:57 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:44:57 Webserver starting on 4005
+22-03-14 17:44:57 Server successfully reloaded.
+22-03-14 17:45:34 /me bailando.
+22-03-14 17:46:40 [..] Server disconnected from the portal.
+22-03-14 17:46:40 Main loop terminated.
+22-03-14 17:46:40 Server Shut Down.
+22-03-14 17:46:40 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:46:41 Loaded.
+22-03-14 17:46:41 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:46:41 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:46:41 Webserver starting on 4005
+22-03-14 17:46:41 Server successfully reloaded.
+22-03-14 17:46:46 /me says, "hola"
+22-03-14 17:48:56 [..] Server disconnected from the portal.
+22-03-14 17:48:56 Main loop terminated.
+22-03-14 17:48:56 Server Shut Down.
+22-03-14 17:48:56 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 17:48:57 Loaded.
+22-03-14 17:48:57 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 17:48:57 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 17:48:57 Webserver starting on 4005
+22-03-14 17:48:57 Server successfully reloaded.
+22-03-14 17:49:17 hola
+22-03-14 17:49:17 /me says, "hola"
+22-03-14 17:56:42 hola
+22-03-14 17:56:42 /me says, "hola"
+22-03-14 18:02:41 [..] Server disconnected from the portal.
+22-03-14 18:02:41 Main loop terminated.
+22-03-14 18:02:41 Server Shut Down.
+22-03-14 18:02:41 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:02:42 Loaded.
+22-03-14 18:02:42 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:02:42 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:02:42 Webserver starting on 4005
+22-03-14 18:02:42 Server successfully reloaded.
+22-03-14 18:02:48 hola
+22-03-14 18:02:48 /me says, "hola"
+22-03-14 18:05:44 [..] Server disconnected from the portal.
+22-03-14 18:05:44 Main loop terminated.
+22-03-14 18:05:44 Server Shut Down.
+22-03-14 18:05:44 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:05:45 Loaded.
+22-03-14 18:05:45 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:05:45 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:05:45 Webserver starting on 4005
+22-03-14 18:05:45 Server successfully reloaded.
+22-03-14 18:06:04 maxi
+22-03-14 18:06:04 /me says, "maxi"
+22-03-14 18:12:13 [..] Server disconnected from the portal.
+22-03-14 18:12:13 Main loop terminated.
+22-03-14 18:12:13 Server Shut Down.
+22-03-14 18:12:13 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:12:14 Loaded.
+22-03-14 18:12:14 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:12:14 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:12:14 Webserver starting on 4005
+22-03-14 18:12:14 Server successfully reloaded.
+22-03-14 18:12:25 anna=test
+22-03-14 18:18:37 [..] Server disconnected from the portal.
+22-03-14 18:18:37 Main loop terminated.
+22-03-14 18:18:37 Server Shut Down.
+22-03-14 18:18:37 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:18:38 Loaded.
+22-03-14 18:18:38 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:18:38 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:18:38 Webserver starting on 4005
+22-03-14 18:18:38 Server successfully reloaded.
+22-03-14 18:19:01 [box, pesa, caja, Anna Pacula, macorvalan]
+22-03-14 18:21:50 [..] Server disconnected from the portal.
+22-03-14 18:21:50 Main loop terminated.
+22-03-14 18:21:50 Server Shut Down.
+22-03-14 18:21:50 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:21:51 Loaded.
+22-03-14 18:21:51 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:21:51 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:21:51 Webserver starting on 4005
+22-03-14 18:21:51 Server successfully reloaded.
+22-03-14 18:22:01 [box, pesa, caja, Anna Pacula, macorvalan]
+22-03-14 18:22:14 [::] Traceback (most recent call last):
+22-03-14 18:22:14 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 18:22:14 [::]     ret = cmd.func()
+22-03-14 18:22:14 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 941, in func
+22-03-14 18:22:14 [::]     if not self.lhs or not self.rhs:
+22-03-14 18:22:14 [::] AttributeError: 'CmdWhisper' object has no attribute 'lhs'
+22-03-14 18:22:14 [EE] User input was: 'whisper anna=holas'.
+22-03-14 18:25:19 [..] Server disconnected from the portal.
+22-03-14 18:25:19 Main loop terminated.
+22-03-14 18:25:19 Server Shut Down.
+22-03-14 18:25:19 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:25:20 Loaded.
+22-03-14 18:25:20 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:25:20 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:25:20 Webserver starting on 4005
+22-03-14 18:25:20 Server successfully reloaded.
+22-03-14 18:25:27 anna=holas
+22-03-14 18:25:27 [::] Traceback (most recent call last):
+22-03-14 18:25:27 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-14 18:25:27 [::]     ret = cmd.func()
+22-03-14 18:25:27 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 949, in func
+22-03-14 18:25:27 [::]     logger.log_msg(receivers)
+22-03-14 18:25:27 [::] NameError: name 'receivers' is not defined
+22-03-14 18:25:27 [EE] User input was: 'whisper anna=holas'.
+22-03-14 18:26:23 [..] Server disconnected from the portal.
+22-03-14 18:26:23 Main loop terminated.
+22-03-14 18:26:23 Server Shut Down.
+22-03-14 18:26:23 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:26:24 Loaded.
+22-03-14 18:26:24 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:26:24 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:26:24 Webserver starting on 4005
+22-03-14 18:26:24 Server successfully reloaded.
+22-03-14 18:26:41 anna, macorvalan=holas
+22-03-14 18:27:27 [..] Server disconnected from the portal.
+22-03-14 18:27:27 Main loop terminated.
+22-03-14 18:27:27 Server Shut Down.
+22-03-14 18:27:27 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:27:28 Loaded.
+22-03-14 18:27:28 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:27:28 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:27:28 Webserver starting on 4005
+22-03-14 18:27:28 Server successfully reloaded.
+22-03-14 18:27:49 anna=holita
+22-03-14 18:30:16 [..] Server disconnected from the portal.
+22-03-14 18:30:16 Main loop terminated.
+22-03-14 18:30:16 Server Shut Down.
+22-03-14 18:30:16 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:30:17 Loaded.
+22-03-14 18:30:17 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:30:17 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:30:17 Webserver starting on 4005
+22-03-14 18:30:17 Server successfully reloaded.
+22-03-14 18:30:26 hola
+22-03-14 18:30:49 anna=holita
+22-03-14 18:33:08 [..] Server disconnected from the portal.
+22-03-14 18:33:08 Main loop terminated.
+22-03-14 18:33:08 Server Shut Down.
+22-03-14 18:33:08 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-14 18:33:09 Loaded.
+22-03-14 18:33:09 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-14 18:33:09 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-14 18:33:09 Webserver starting on 4005
+22-03-14 18:33:09 Server successfully reloaded.
+22-03-14 18:33:12 hola
+22-03-14 18:33:12 {}
+22-03-14 18:33:30 anna=holiatas
+22-03-14 18:33:30 {}
+22-03-14 18:40:37 [..] Logged out: macorvalan(account 1) 127.0.0.1 (0 sessions(s) remaining) (quit)
+22-03-14 18:40:45 [..] Logged out: mgomez(account 3) 127.0.0.1 (0 sessions(s) remaining) (quit)
+22-03-14 18:40:56 [..] Server disconnected from the portal.
+22-03-14 18:40:56 Main loop terminated.
+22-03-14 18:40:56 Server Shut Down.
+22-03-15 11:26:00 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 11:26:03 Loaded.
+22-03-15 11:26:03 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 11:26:03 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 11:26:03 Webserver starting on 4005
+22-03-15 11:26:04 Evennia Server successfully started.
+22-03-15 11:27:13 [..] Logged in: macorvalan(account 1) 127.0.0.1 (1 session(s) total)
+22-03-15 11:27:51 [..] Logged in: mgomez(account 3) 127.0.0.1 (1 session(s) total)
+22-03-15 11:28:00 [SS] Puppet Success: (Caller: mgomez(account 3), Target: Anna Pacula, IP: 127.0.0.1).
+22-03-15 11:28:15 [SS] Puppet Success: (Caller: macorvalan(account 1), Target: macorvalan, IP: 127.0.0.1).
+22-03-15 11:30:30 {'whisper': True, 'receivers': [Anna Pacula]}
+22-03-15 11:35:03 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.
+22-03-15 11:39:59 {}
+22-03-15 11:40:49 {'whisper': True, 'receivers': [Anna Pacula]}
+22-03-15 11:42:41 [..] Server disconnected from the portal.
+22-03-15 11:42:41 Main loop terminated.
+22-03-15 11:42:41 Server Shut Down.
+22-03-15 11:42:41 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 11:42:43 Loaded.
+22-03-15 11:42:43 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 11:42:43 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 11:42:43 Webserver starting on 4005
+22-03-15 11:42:43 Server successfully reloaded.
+22-03-15 11:44:16 {'whisper': True, 'receivers': [Anna Pacula]}
+22-03-15 11:45:05 [::] Traceback (most recent call last):
+22-03-15 11:45:05 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-15 11:45:05 [::]     ret = cmd.func()
+22-03-15 11:45:05 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 909, in func
+22-03-15 11:45:05 [::]     for key, vale in args.items():
+22-03-15 11:45:05 [::] NameError: name 'args' is not defined
+22-03-15 11:45:05 [EE] User input was: 'say hola'.
+22-03-15 11:45:41 [..] Server disconnected from the portal.
+22-03-15 11:45:41 Main loop terminated.
+22-03-15 11:45:41 Server Shut Down.
+22-03-15 11:45:41 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 11:45:42 Loaded.
+22-03-15 11:45:42 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 11:45:42 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 11:45:42 Webserver starting on 4005
+22-03-15 11:45:42 Server successfully reloaded.
+22-03-15 11:45:49 [::] Traceback (most recent call last):
+22-03-15 11:45:49 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdhandler.py", line 644, in _run_command
+22-03-15 11:45:49 [::]     ret = cmd.func()
+22-03-15 11:45:49 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 909, in func
+22-03-15 11:45:49 [::]     for key, vale in self.args.items():
+22-03-15 11:45:49 [::] AttributeError: 'str' object has no attribute 'items'
+22-03-15 11:45:49 [EE] User input was: 'say hola'.
+22-03-15 11:46:38 [..] Server disconnected from the portal.
+22-03-15 11:46:38 Main loop terminated.
+22-03-15 11:46:38 Server Shut Down.
+22-03-15 11:46:38 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 11:46:39 Loaded.
+22-03-15 11:46:39 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 11:46:39 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 11:46:39 Webserver starting on 4005
+22-03-15 11:46:39 Server successfully reloaded.
+22-03-15 11:46:46 {}
+22-03-15 11:48:10 [..] Server disconnected from the portal.
+22-03-15 11:48:10 Main loop terminated.
+22-03-15 11:48:10 Server Shut Down.
+22-03-15 11:48:11 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 11:48:11 Loaded.
+22-03-15 11:48:11 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 11:48:11 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 11:48:11 Webserver starting on 4005
+22-03-15 11:48:11 Server successfully reloaded.
+22-03-15 11:57:11 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.
+22-03-15 12:06:39 [..] Server disconnected from the portal.
+22-03-15 12:06:39 Main loop terminated.
+22-03-15 12:06:39 Server Shut Down.
+22-03-15 12:06:40 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 12:06:40 Loaded.
+22-03-15 12:06:40 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 12:06:40 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 12:06:40 Webserver starting on 4005
+22-03-15 12:06:40 Server successfully reloaded.
+22-03-15 12:06:45 [::] Traceback (most recent call last):
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdsethandler.py", line 179, in import_cmdset
+22-03-15 12:06:45 [::]     module = import_module(modpath, package="evennia")
+22-03-15 12:06:45 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:06:45 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 1230, in <module>
+22-03-15 12:06:45 [::]     class ContribRPObject(DefaultObject):
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 147, in __new__
+22-03-15 12:06:45 [::]     new_class = ModelBase.__new__(cls, name, bases, attrs)
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/base.py", line 321, in __new__
+22-03-15 12:06:45 [::]     new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/apps/registry.py", line 228, in register_model
+22-03-15 12:06:45 [::]     raise RuntimeError(
+22-03-15 12:06:45 [::] RuntimeError: Conflicting 'contribrpobject' models in application 'objects': <class 'AU_RPGSystem.AU_RPGCommunications.ContribRPObject'> and <class 'evennia.contrib.rpsystem.ContribRPObject'>.
+22-03-15 12:06:45 [EE] Traceback (most recent call last):
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdsethandler.py", line 179, in import_cmdset
+22-03-15 12:06:45 [EE]     module = import_module(modpath, package="evennia")
+22-03-15 12:06:45 [EE]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:06:45 [EE]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 1230, in <module>
+22-03-15 12:06:45 [EE]     class ContribRPObject(DefaultObject):
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 147, in __new__
+22-03-15 12:06:45 [EE]     new_class = ModelBase.__new__(cls, name, bases, attrs)
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/base.py", line 321, in __new__
+22-03-15 12:06:45 [EE]     new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/apps/registry.py", line 228, in register_model
+22-03-15 12:06:45 [EE]     raise RuntimeError(
+22-03-15 12:06:45 [EE] RuntimeError: Conflicting 'contribrpobject' models in application 'objects': <class 'AU_RPGSystem.AU_RPGCommunications.ContribRPObject'> and <class 'evennia.contrib.rpsystem.ContribRPObject'>.
+22-03-15 12:06:45 [EE] 
+22-03-15 12:06:45 [EE] Compile/Run error when loading cmdset 'evennia.contrib.rpsystem.RPSystemCmdSet'.",
+22-03-15 12:06:45 [EE] (Traceback was logged 22-03-15 12:06:45)
+22-03-15 12:06:45 [::] Traceback (most recent call last):
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdsethandler.py", line 179, in import_cmdset
+22-03-15 12:06:45 [::]     module = import_module(modpath, package="evennia")
+22-03-15 12:06:45 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:06:45 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:06:45 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 1230, in <module>
+22-03-15 12:06:45 [::]     class ContribRPObject(DefaultObject):
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 147, in __new__
+22-03-15 12:06:45 [::]     new_class = ModelBase.__new__(cls, name, bases, attrs)
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/base.py", line 321, in __new__
+22-03-15 12:06:45 [::]     new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+22-03-15 12:06:45 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/apps/registry.py", line 228, in register_model
+22-03-15 12:06:45 [::]     raise RuntimeError(
+22-03-15 12:06:45 [::] RuntimeError: Conflicting 'contribrpobject' models in application 'objects': <class 'AU_RPGSystem.AU_RPGCommunications.ContribRPObject'> and <class 'evennia.contrib.rpsystem.ContribRPObject'>.
+22-03-15 12:06:45 [EE] Traceback (most recent call last):
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evennia/evennia/commands/cmdsethandler.py", line 179, in import_cmdset
+22-03-15 12:06:45 [EE]     module = import_module(modpath, package="evennia")
+22-03-15 12:06:45 [EE]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:06:45 [EE]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:06:45 [EE]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evennia/evennia/contrib/rpsystem.py", line 1230, in <module>
+22-03-15 12:06:45 [EE]     class ContribRPObject(DefaultObject):
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 147, in __new__
+22-03-15 12:06:45 [EE]     new_class = ModelBase.__new__(cls, name, bases, attrs)
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/base.py", line 321, in __new__
+22-03-15 12:06:45 [EE]     new_class._meta.apps.register_model(new_class._meta.app_label, new_class)
+22-03-15 12:06:45 [EE]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/apps/registry.py", line 228, in register_model
+22-03-15 12:06:45 [EE]     raise RuntimeError(
+22-03-15 12:06:45 [EE] RuntimeError: Conflicting 'contribrpobject' models in application 'objects': <class 'AU_RPGSystem.AU_RPGCommunications.ContribRPObject'> and <class 'evennia.contrib.rpsystem.ContribRPObject'>.
+22-03-15 12:06:45 [EE] 
+22-03-15 12:06:45 [EE] Compile/Run error when loading cmdset 'evennia.contrib.rpsystem.RPSystemCmdSet'.",
+22-03-15 12:06:45 [EE] (Traceback was logged 22-03-15 12:06:45)
+22-03-15 12:11:49 [..] Server disconnected from the portal.
+22-03-15 12:11:49 Main loop terminated.
+22-03-15 12:11:49 Server Shut Down.
+22-03-15 12:11:50 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 12:11:50 Loaded.
+22-03-15 12:11:50 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 12:11:50 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 12:11:50 Webserver starting on 4005
+22-03-15 12:11:50 Server successfully reloaded.
+22-03-15 12:11:50 [::] Traceback (most recent call last):
+22-03-15 12:11:50 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:11:50 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:11:50 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:11:50 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:11:50 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:11:50 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:11:50 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:11:50 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:11:50 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:11:50 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:11:50 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:11:50 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:11:50 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/characters.py", line 11, in <module>
+22-03-15 12:11:50 [::]     from CoC.CoC_Characters import CoCCharacter
+22-03-15 12:11:50 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Characters.py", line 6, in <module>
+22-03-15 12:11:50 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPCharacter
+22-03-15 12:11:50 [::] ImportError: cannot import name 'ContribRPCharacter' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:11:51 [::] Traceback (most recent call last):
+22-03-15 12:11:51 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:11:51 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:11:51 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:11:51 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:11:51 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:11:51 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:11:51 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:11:51 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:11:51 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:11:51 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:11:51 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:11:51 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:11:51 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/characters.py", line 11, in <module>
+22-03-15 12:11:51 [::]     from CoC.CoC_Characters import CoCCharacter
+22-03-15 12:11:51 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Characters.py", line 6, in <module>
+22-03-15 12:11:51 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPCharacter
+22-03-15 12:11:51 [::] ImportError: cannot import name 'ContribRPCharacter' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 173, in __get__
+22-03-15 12:12:00 [::]     rel_obj = self.field.get_cached_value(instance)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/fields/mixins.py", line 15, in get_cached_value
+22-03-15 12:12:00 [::]     return instance._state.fields_cache[cache_name]
+22-03-15 12:12:00 [::] KeyError: 'db_location'
+22-03-15 12:12:00 [::] 
+22-03-15 12:12:00 [::] During handling of the above exception, another exception occurred:
+22-03-15 12:12:00 [::] 
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:12:00 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:12:00 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:12:00 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:12:00 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/rooms.py", line 9, in <module>
+22-03-15 12:12:00 [::]     from CoC.CoC_Rooms import CoCCharGenRoom
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Rooms.py", line 6, in <module>
+22-03-15 12:12:00 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPRoom
+22-03-15 12:12:00 [::] ImportError: cannot import name 'ContribRPRoom' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:12:00 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:12:00 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:12:00 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:12:00 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 14, in <module>
+22-03-15 12:12:00 [::]     from CoC.CoC_Objects import CoCObject
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Objects.py", line 6, in <module>
+22-03-15 12:12:00 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPObject
+22-03-15 12:12:00 [::] ImportError: cannot import name 'ContribRPObject' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:12:00 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:12:00 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:12:00 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:12:00 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 14, in <module>
+22-03-15 12:12:00 [::]     from CoC.CoC_Objects import CoCObject
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Objects.py", line 6, in <module>
+22-03-15 12:12:00 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPObject
+22-03-15 12:12:00 [::] ImportError: cannot import name 'ContribRPObject' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:12:00 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:12:00 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:12:00 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:12:00 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/objects.py", line 14, in <module>
+22-03-15 12:12:00 [::]     from CoC.CoC_Objects import CoCObject
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Objects.py", line 6, in <module>
+22-03-15 12:12:00 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPObject
+22-03-15 12:12:00 [::] ImportError: cannot import name 'ContribRPObject' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 173, in __get__
+22-03-15 12:12:00 [::]     rel_obj = self.field.get_cached_value(instance)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evenniav/lib/python3.8/site-packages/django/db/models/fields/mixins.py", line 15, in get_cached_value
+22-03-15 12:12:00 [::]     return instance._state.fields_cache[cache_name]
+22-03-15 12:12:00 [::] KeyError: 'db_destination'
+22-03-15 12:12:00 [::] 
+22-03-15 12:12:00 [::] During handling of the above exception, another exception occurred:
+22-03-15 12:12:00 [::] 
+22-03-15 12:12:00 [::] Traceback (most recent call last):
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/typeclasses/models.py", line 286, in set_class_from_typeclass
+22-03-15 12:12:00 [::]     self.__class__ = class_from_module(self.db_typeclass_path)
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/evennia/evennia/utils/utils.py", line 1468, in class_from_module
+22-03-15 12:12:00 [::]     mod = importlib.import_module(testpath, package="evennia")
+22-03-15 12:12:00 [::]   File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+22-03-15 12:12:00 [::]     return _bootstrap._gcd_import(name[level:], package, level)
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap_external>", line 848, in exec_module
+22-03-15 12:12:00 [::]   File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/typeclasses/rooms.py", line 9, in <module>
+22-03-15 12:12:00 [::]     from CoC.CoC_Rooms import CoCCharGenRoom
+22-03-15 12:12:00 [::]   File "/home/maximiliano/mudDev/mygame/./CoC/CoC_Rooms.py", line 6, in <module>
+22-03-15 12:12:00 [::]     from AU_RPGSystem.AU_RPGCommunications import ContribRPRoom
+22-03-15 12:12:00 [::] ImportError: cannot import name 'ContribRPRoom' from 'AU_RPGSystem.AU_RPGCommunications' (/home/maximiliano/mudDev/mygame/./AU_RPGSystem/AU_RPGCommunications.py)
+22-03-15 12:13:22 [..] Server disconnected from the portal.
+22-03-15 12:13:22 Main loop terminated.
+22-03-15 12:13:22 Server Shut Down.
+22-03-15 12:13:22 Loading /home/maximiliano/mudDev/evennia/evennia/server/server.py...
+22-03-15 12:13:23 Loaded.
+22-03-15 12:13:23 twistd 21.7.0 (/home/maximiliano/mudDev/evenniav/bin/python 3.8.10) starting up.
+22-03-15 12:13:23 reactor class: twisted.internet.epollreactor.EPollReactor.
+22-03-15 12:13:23 Webserver starting on 4005
+22-03-15 12:13:23 Server successfully reloaded.
+22-03-15 12:22:23 [WW] Warning: Idmapper flush called more than once in 5.0 min interval. Check memory usage.

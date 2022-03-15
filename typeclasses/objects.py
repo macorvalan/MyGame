@@ -11,9 +11,10 @@ inheritance.
 
 """
 from evennia import DefaultObject
+from CoC.CoC_Objects import CoCObject
 
 
-class Object(DefaultObject):
+class Object(CoCObject):
     """
     This is the root typeclass object, implementing an in-game Evennia
     game object, such as having a location, being able to be
@@ -158,5 +159,13 @@ class Object(DefaultObject):
                                  object speaks
 
      """
+
+    def at_object_creation(self):
+        super(Object, self).at_object_creation()
+
+    def return_appearance(self, looker):
+        text = super().return_appearance(looker)
+
+        return text
 
     pass

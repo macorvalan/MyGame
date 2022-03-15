@@ -21,6 +21,9 @@ class Room(CoCRoom):
     properties and methods available on all Objects.
     """
 
+    def at_object_creation(self):
+        super(Room, self).at_object_creation()
+
     pass
 
 

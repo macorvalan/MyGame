@@ -28,8 +28,6 @@ from AU_ANSI.AU_ANSI_Screens_001 import AU_ANSI_Screens_0000
 CONNECTION_SCREEN = AU_ANSI_Screens_0000.strip()
 
 
-
-
 # CONNECTION_SCREEN_R = """
 # |b==============================================================|n
 # Welcome to |g{}|n, version {}!
