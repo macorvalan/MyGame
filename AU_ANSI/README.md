@@ -16,4 +16,4 @@ Also the python script to convert from ANSI color codes to evennia color tags.
 5. Save it
 6. Export to utf8ans
 7. use the script (in terminal) to replace the ansi color to evennia color tags
-    Python AU_ANSI_Parser.py -i <inputfile> -o <outputfile>
+    Python AU_ANSI_Parser.py -i [inputfile] -o <outputfile>
