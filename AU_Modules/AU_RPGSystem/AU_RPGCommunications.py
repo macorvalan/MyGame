@@ -108,6 +108,7 @@ from evennia import DefaultObject, DefaultCharacter, ObjectDB
 from evennia import Command, CmdSet
 from evennia import ansi
 from evennia.utils.utils import lazy_property, make_iter, variable_from_module
+from evennia.utils import logger
 
 
 _AT_SEARCH_RESULT = variable_from_module(*settings.SEARCH_AT_RESULT.rsplit(".", 1))

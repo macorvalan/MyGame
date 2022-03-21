@@ -11,7 +11,7 @@ List
 
 
 # Screen 0000: Connection screen
-AU_ANSI_Screens_0000 = """|n               |RJ|r.|n|R
+AU_ANSI_Screen_0000 = """|n               |RJ|r.|n|R
 |W             |R.B|rBQ|n|R
 |W             |RBB|rB|n|RB                    |g:|n|G             iB|gBB|n
             |RB|rgB|n|RQ|rB|n|R.|W                 |G:B|gQ|n|G            .B|gBB|n|GB.

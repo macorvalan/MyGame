@@ -66,4 +66,4 @@ try:
 except ImportError:
     print("secret_settings.py file not found or failed to import.")
 
-CMDSET_UNLOGGEDIN = "evennia.contrib.menu_login.UnloggedinCmdSet"
+CMDSET_UNLOGGEDIN = "AU_Modules.AU_Menu_Logging.AU_MenuLogging.UnloggedinCmdSet"

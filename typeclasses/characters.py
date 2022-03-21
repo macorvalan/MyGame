@@ -7,8 +7,7 @@ is setup to be the "default" character type created by the default
 creation commands.
 
 """
-from evennia import DefaultCharacter
-from CoC.CoC_Characters import CoCCharacter
+from CoC.Characters.CoC_Characters import CoCCharacter
 
 
 class Character(CoCCharacter):

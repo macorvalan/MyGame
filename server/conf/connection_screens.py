@@ -20,12 +20,10 @@ of the screen is done by the unlogged-in "look" command.
 
 """
 
-from django.conf import settings
-from evennia import utils
-from AU_ANSI.AU_ANSI_Screens_001 import AU_ANSI_Screens_0000
+from AU_Modules.AU_ANSI import AU_ANSI_Screens_0000
 
 
-CONNECTION_SCREEN = AU_ANSI_Screens_0000.strip()
+CONNECTION_SCREEN = AU_ANSI_Screens_0000.AU_ANSI_Screen_0000.strip()
 
 
 # CONNECTION_SCREEN_R = """

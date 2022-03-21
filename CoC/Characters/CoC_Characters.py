@@ -2,13 +2,12 @@
 All pc/npc from the Call of Cthulhu 7th version - 1920
 
 """
-from evennia import DefaultCharacter
-from AU_RPGSystem.AU_RPGCommunications import AURPGRPCharacter
+from AU_Modules.AU_RPGSystem.AU_RPGCommunications import AURPGRPCharacter
 
 
 class CoCCharacter(AURPGRPCharacter):
     """
-    Main character, investigator used by the player
+    Main character, investigator, used by the player
     """
 
     def at_object_creation(self):

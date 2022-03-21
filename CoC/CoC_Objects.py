@@ -2,8 +2,7 @@
 
 """
 
-from evennia import DefaultObject
-from AU_RPGSystem.AU_RPGCommunications import AURPGRPObject
+from AU_Modules.AU_RPGSystem.AU_RPGCommunications import AURPGRPObject
 
 
 class CoCObject(AURPGRPObject):

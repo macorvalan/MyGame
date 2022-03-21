@@ -2,8 +2,7 @@
 
 """
 
-from evennia import DefaultRoom
-from AU_RPGSystem.AU_RPGCommunications import AURPGRPRoom
+from AU_Modules.AU_RPGSystem.AU_RPGCommunications import AURPGRPRoom
 
 
 class CoCRoom(AURPGRPRoom):

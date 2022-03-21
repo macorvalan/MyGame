@@ -13,25 +13,30 @@ will be QUIETLY ignored, so make sure to check it well to make sure it
 does what you expect it to.
 
 """
-from evennia.utils import search, dedent, create
-from AU_RPGSystem import AU_RPGLanguages
-import AU_Langs
+from AU_Modules.AU_RPGSystem import AU_RPGLanguages
+from AU_Modules.AU_Langs import AU_Languages
 
 
 def at_initial_setup():
-    # Setup the idioms of the game
-    AU_RPGLanguages.add_language(key='English',
-                                 phonemes=AU_Langs.english_phonemes,
-                                 grammar=AU_Langs.english_grammar,
-                                 word_length_variance=AU_Langs.english_word_length_variance,
-                                 noun_postfix=AU_Langs.english_noun_postfix,
-                                 vowels=AU_Langs.english_vowels,
-                                 manual_translations=AU_Langs.english_manual_translations,
-                                 auto_translation=AU_Langs.english_words_list)
-
-    # Create the main character generation room
-    chargen_room = create.create_object(typeclass='CoC.CoC_Rooms.CoCCharGenRoom', key='Investigator Room')
-    chargen_room.db.desc = dedent('Here you con create your investigator.')
-    chargen_room.tags.add('default_chargen', category='rooms')
+    # Definition of the english language
+    AU_RPGLanguages.add_language(key=AU_Languages.english_key,
+                                 phonemes=AU_Languages.english_phonemes,
+                                 grammar=AU_Languages.english_grammar,
+                                 word_length_variance=AU_Languages.english_word_length_variance,
+                                 noun_translate=AU_Languages.english_noun_translate,
+                                 noun_prefix=AU_Languages.english_noun_prefix,
+                                 noun_postfix=AU_Languages.english_noun_postfix,
+                                 vowels=AU_Languages.english_vowels,
+                                 manual_translations=AU_Languages.english_manual_translations,
+                                 auto_translations=AU_Languages.english_auto_translations,
+                                 force=AU_Languages.english_force)
 
     pass
+
+
+"""
+    # Create the main character generation room
+    #chargen_room = create.create_object(typeclass='CoC.CoC_Rooms.CoCCharGenRoom', key='Investigator Room')
+    #chargen_room.db.desc = dedent('Here you con create your investigator.')
+    #chargen_room.tags.add('default_chargen', category='rooms')
+"""
