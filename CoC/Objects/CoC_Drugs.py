@@ -2,7 +2,7 @@
 
 """
 
-from CoC.CoC_Objects import CoCObject
+from CoC.Objects.CoC_Objects import CoCObject
 
 
 class CoCDrugs(CoCObject):

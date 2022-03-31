@@ -10,7 +10,7 @@ the other types, you can do so by adding this as a multiple
 inheritance.
 
 """
-from CoC.CoC_Objects import CoCObject
+from CoC.Objects.CoC_Objects import CoCObject
 
 
 class Object(CoCObject):

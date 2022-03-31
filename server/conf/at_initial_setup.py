@@ -13,6 +13,9 @@ will be QUIETLY ignored, so make sure to check it well to make sure it
 does what you expect it to.
 
 """
+
+from evennia.utils import create, search
+
 from AU_Modules.AU_RPGSystem import AU_RPGLanguages
 from AU_Modules.AU_Langs import AU_Languages
 
@@ -31,6 +34,25 @@ def at_initial_setup():
                                  auto_translations=AU_Languages.english_auto_translations,
                                  force=AU_Languages.english_force)
 
+    # Definition of all languages used in the mud.
+    # TODO: add the languages
+
+    # Creation of the initial CharGen Room and its objects
+    # Room creation
+    # TODO: create chargen room
+
+    # objects Creation
+    # TODO: Create object in room
+
+
+    # Create the main character generation room
+    chargen_room = create.create_object(typeclass='CoC.CoC_Rooms.CoCCharGenRoom', key='Investigator Room')
+    chargen_room.db.desc = 'Here you con create your investigator.'
+    chargen_room.tags.add('default_chargen', category='rooms')
+    chargen_room.save()
+    limboroom=search.object_search('Limbo')[0]
+    silla = create.create_object(typeclass='CoC.CoC_Objects.CoCObject', key='silla', location=limboroom)
+    silla.save()
     pass
 
 

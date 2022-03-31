@@ -7,9 +7,10 @@ for allowing Characters to traverse the exit to its destination.
 
 """
 from evennia import DefaultExit
+from CoC.CoC_Exits import CoCExit
 
 
-class Exit(DefaultExit):
+class Exit(CoCExit):
     """
     Exits are connectors between rooms. Exits are normal Objects except
     they defines the `destination` property. It also does work in the
@@ -34,5 +35,7 @@ class Exit(DefaultExit):
                                         not be called if the attribute `err_traverse` is
                                         defined, in which case that will simply be echoed.
     """
+    def at_object_creation(self):
+        super(Exit, self).at_object_creation()
 
     pass

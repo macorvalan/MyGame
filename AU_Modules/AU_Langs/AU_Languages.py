@@ -17,5 +17,5 @@ english_noun_prefix = ""
 english_noun_postfix = ""
 english_vowels = "aeiouy"
 english_manual_translations = None
-english_auto_translations = utils.get_game_dir_path() + '/AU_Langs/AU_Words.txt'
+english_auto_translations = utils.get_game_dir_path() + '/AU_Modules/AU_Langs/AU_Words.txt'
 english_force = False

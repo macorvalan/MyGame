@@ -2,18 +2,16 @@
 
 """
 
-from AU_Modules.AU_RPGSystem.AU_RPGCommunications import AURPGRPObject
+from CoC.Objects.CoC_Objects import CoCObject
 
 
-class CoCObject(AURPGRPObject):
+class CoCMedicaments(CoCObject):
     """
-
 
     """
 
     def at_object_creation(self):
         super(CoCObject, self).at_object_creation()
-        self.db.prueba = 42
 
     def return_appearance(self, looker):
         text = super().return_appearance(looker)

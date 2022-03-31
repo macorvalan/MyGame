@@ -49,4 +49,4 @@ class CoCCharacter(AURPGRPCharacter):
         self.db._sanity = 0  # Sanity - POW - INTEGER
 
         # Status FLAGS
-        pass
+        pass  # END of CLASS

@@ -8,6 +8,7 @@ Modified by MaCorvalan, 2022
       I don't like emotes in whispers and are actually not working, only
       add duplicate text to whispers send and received.
     * Modified the description on how it works and installation.
+    * Add 'DefaultRoom' inheritance to AURPGRPRoom.
 
 This module contains the AURPGRPObject, AURPGRPRoom and
 AURPGRPCharacter typeclasses.  If you inherit your
@@ -104,7 +105,7 @@ import re
 from re import escape as re_escape
 import itertools
 from django.conf import settings
-from evennia import DefaultObject, DefaultCharacter, ObjectDB
+from evennia import DefaultObject, DefaultCharacter, DefaultRoom, ObjectDB
 from evennia import Command, CmdSet
 from evennia import ansi
 from evennia.utils.utils import lazy_property, make_iter, variable_from_module
@@ -1487,7 +1488,7 @@ class AURPGRPObject(DefaultObject):
         return string
 
 
-class AURPGRPRoom(AURPGRPObject):
+class AURPGRPRoom(DefaultRoom, AURPGRPObject):
     """
     Dummy inheritance for rooms.
     """

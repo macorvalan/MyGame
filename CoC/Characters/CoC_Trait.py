@@ -200,6 +200,8 @@ class TraitException(Exception):
     def __init__(self, msg):
         self.msg = msg
 
+    pass  # END of CLASS
+
 
 class TraitHandler(object):
     """
@@ -323,6 +325,8 @@ class TraitHandler(object):
         Return a list of all traits keys in this TraitHandler.
         """
         return list(self.attribute_dict.keys())
+
+    pass  # END of CLASS
 
 
 @total_ordering
@@ -767,3 +771,5 @@ class Trait(object):
                 return self.max
 
         return value
+
+    pass  # END of CLASS
