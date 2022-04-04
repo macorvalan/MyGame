@@ -10,7 +10,7 @@ Common furniture's inherit from the furniture class/sub-classes, (multiple inher
 """
 
 from CoC.Objects.CoC_Objects import CoCObject
-from CoC.Objects.CoC_Objects import Mass, Seats, Parts, Moveable, Information
+from CoC.Objects.CoC_Objects import Mass, Seats, Parts, Movable, Stackable, Slots, Container, Information
 
 
 # ---Base Object -------------------------------------------------------------------------------------------------------------------------------------
@@ -67,7 +67,11 @@ class Chair(CoCFurnitures):
         * Has Parts
         * Has Materials (Parts)
         * Has Movement
+        * Has Slots
         * Has Seats
+        * Is Stack
+        * Is Not Container
+
 
     GUID: "FNT-CHR-000001"
     """
@@ -78,8 +82,11 @@ class Chair(CoCFurnitures):
         self.db.sub_classes = ""
 
         # Important attributes to set for ALL objects
-        self.db.obj_guid = "FNT-CHR-000001"                                                         # set GUID
+        self.db.obj_category = "FNT-CHR-000001"                                                     # set GUID
         self.db.obj_lvis = True                                                                     # set Object look visibility
+
+        self.db.obj_usable = True
+        self.db.obj_original = True
 
         parts = {self.name + " " + 'body': ['wood', 1, 2500.0],                                     # name: [material, amount, mass]
                  self.name + " " + 'upholstery': ['cloth', 1, 150.0],                               #
@@ -89,7 +96,7 @@ class Chair(CoCFurnitures):
         self.db.obj_parts = Parts(parts)                                                            # set PARTS
         self.db.sub_classes += "P:"
 
-        loc = self.get_room_location(self)                                                          #
+        loc = self.get_room_location()                                                          #
         temp_gravity = loc.db.gravity                                                               #
                                                                                                     #
         temp_mass = 0                                                                               #
@@ -99,17 +106,26 @@ class Chair(CoCFurnitures):
         self.db.obj_mass = Mass(temp_mass, temp_gravity)                                            # set MASS and GRAVITY
         self.db.sub_classes += "M:"
 
-        locks = {'get': ['false()', 'You can NOT put this object in your inventory.'],              #
+        locks = {'get': ['false()', 'You can NOT put this object in your inventory.'],              # lock: condition, message
                  }                                                                                  #
-        self.db.obj_move = Moveable(self, locks)                                                    # set MOVE
+        self.db.obj_move = Movable(self, locks)                                                     # set MOVE
         self.db.sub_classes += "L:"
+
+        self.db.obj_stack = Stackable(Chair, True, 3)                                               # set STACK
+        self.db.sub_classes += "K:"                                                                 #
+
+        self.db.obj_container = Container(container=False)                                          # set CONTAINER
 
         # Attributes only for chairs
         self.db.obj_seats = Seats(1)                                                                # set SEATS
         self.db.sub_classes += "S:"
 
+        slots_dic = {'back': [1, 3.0, 15000]}                                                       #
+        self.db.obj_slots = Slots(slots_dic)                                                        # set SLOTS
+        self.db.sub_classes += 'O:'
+
         # Extra-Information about the object
-        self.db.obj_info = Information(self)                                                        # set Information
+        self.db.obj_info = Information()                                                            # set Information
 
     # --- Properties -----------------------------------------------------------
 
@@ -119,8 +135,6 @@ class Chair(CoCFurnitures):
         Extra info from the object (only for admin/ builders), show by executing a command.
         """
 
-        obj_info = self.db.obj_info.info()
-
-        return obj_info
+        return self.db.obj_info.update(self)
 
     pass  # END of CLASS
