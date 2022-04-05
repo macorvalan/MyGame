@@ -40,9 +40,21 @@ class TestFurniture(EvenniaTest):
 
         self.assertEqual(True, test_silla.db.obj_lvis, "Testing CoCObject obj_lvis attribute")
 
-    def test_chair_mass(self):
+    def test_cocobject_obj_sublocation(self):
         """
         Test Class 03
+        Test Inheritance from CoCObject class.
+                * [obj.sub_location]
+
+        """
+        room = create_object(CoC.CoC_Rooms.CoCRoom, key='A room with gravity')
+        test_silla = create_object(Chair, key='Old chair', location=room)
+
+        self.assertEqual(room, test_silla.db.obj_sub_location, "Testing CoCObject obj_sub_location attribute")
+
+    def test_chair_mass(self):
+        """
+        Test Class 04
         Test the Mass class of the object
                 * [mass]
                 * [gravity]
@@ -74,7 +86,7 @@ class TestFurniture(EvenniaTest):
 
     def test_chair_seats(self):
         """
-        Test Class 04
+        Test Class 05
         Test the Seats class of the object.
                 * [Seats]
                 * [free seats]
@@ -88,7 +100,7 @@ class TestFurniture(EvenniaTest):
 
     def test_chair_copy(self):
         """
-        Test Class 05
+        Test Class 06
         Test if the copy_object command copy all attributes.
                 * [part name]
 
@@ -105,7 +117,7 @@ class TestFurniture(EvenniaTest):
 
     def test_chair_stack(self):
         """
-        Test Class 05
+        Test Class 07
         Test  the Seats of the chair.
                 * [can_stack]
                 * [max_stack]
@@ -143,21 +155,20 @@ class TestFurniture(EvenniaTest):
 
     def test_chair_slots(self):
         """
-        Test Class 06
+        Test Class 08
         Test the Slots of the object
 
         """
 
         room = create_object(CoC.CoC_Rooms.CoCRoom, key='A room with gravity')
         test_silla1 = create_object(Chair, key='Old chair', location=room)
-        mochila = create_object(CoCObject, key='Mochila', location=room)
 
         self.assertEqual(True, test_silla1.db.obj_slots.has_slots(), "Testing the slots of the Chair.")
 
         s_free = test_silla1.db.obj_slots.free_slots()
         s_used = test_silla1.db.obj_slots.used_slots()
-        self.assertEqual(1, len(s_free), "Testing the free slots of the Chair.")
-        self.assertEqual(0, len(s_used), "Testing the used slots of the Chair.")
+        self.assertEqual(True, bool(s_free), "Testing the free slots of the Chair.")
+        self.assertEqual(False, bool(s_used), "Testing the used slots of the Chair.")
 
 
 

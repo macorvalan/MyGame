@@ -16,6 +16,7 @@ Sub-classes adding attributes to the objects.
     * S Seats: set the amount od seats the object has.                                              Ok
     * P Parts: set the parts of an object.                                                          Ok
     * T Materials: set the materials of the object (parts), dictionary(material_name, %).           Ok
+    * V Volumen: set the volume and shape of the object.
     * A Assembly:
     * D Disassemble:
     * O Slots: set the amount of slots of the object.                                               Ok
@@ -36,6 +37,7 @@ class ObjectException(Exception):
 
     Args:
         msg (str): informative error message.
+
     """
 
     # --- Constructor ----------------------------------------------------------
@@ -48,7 +50,8 @@ class ObjectException(Exception):
 # ---Base Object class -------------------------------------------------------------------------------------------------------------------------------
 class CoCObject(AURPGRPObject):
     """
-    Call of Cthulhu base Object class
+    Call of Cthulhu base Object class.
+
     """
 
     # --- Constructor ----------------------------------------------------------
@@ -60,6 +63,7 @@ class CoCObject(AURPGRPObject):
 
         self.db.obj_original = True
         self.db.obj_usable = True
+        self.db.obj_sub_location = self.location
 
     # --- Hooks ----------------------------------------------------------------
     def return_appearance(self, looker):
@@ -107,6 +111,7 @@ class MovableException(Exception):
 class Movable(object):
     """
     Set the move properties of the object.
+
     """
 
     # --- Constructor ----------------------------------------------------------
@@ -172,6 +177,95 @@ class Movable(object):
         else:
             ex_msg = "The lock specified do not exist in the object"
             raise MovableException(ex_msg)
+
+    pass  # END of CLASS
+
+
+# --- VolumeException class ---
+class VolumeException(Exception):
+    """
+    Base exception class raise by 'Volume' objects.
+
+    Args:
+        msg (str): informative error message.
+    """
+
+    # --- Constructor ----------------------------------------------------------
+    def __init__(self, msg):
+        self.msg = msg
+
+    pass  # END of CLASS
+
+
+# --- Volume class ---
+class Volume(object):
+    """
+    Set the volume and the shape of the object.
+
+    """
+
+    # --- Constructor ----------------------------------------------------------
+    def __init__(self, s_obj):
+        self._vol_x = int(s_obj.split('x')[0])                                  # WIDTH
+        self._vol_y = int(s_obj.split('x')[1])                                  # HEIGHT
+        self._vol_z = int(s_obj.split('x')[2])                                  # DEEP
+
+        self._volume = int(self._vol_x * self._vol_y * self._vol_z)
+        self._shape = s_obj                                                     # X Y Z
+
+
+    # --- Properties -----------------------------------------------------------
+    # --- vol_x --- get/set
+    @property
+    def vol_x(self):
+        return self._vol_x
+
+    @vol_x.setter
+    def vol_x(self, value):
+        ex_msg = "The volume X can only be assigned at object creation."
+        raise VolumeException(ex_msg)
+
+    # --- vol_y --- get/set
+    @property
+    def vol_y(self):
+        return self._vol_y
+
+    @vol_y.setter
+    def vol_y(self, value):
+        ex_msg = "The volume Y can only be assigned at object creation."
+        raise VolumeException(ex_msg)
+
+    # --- vol_z --- get/set
+    @property
+    def vol_z(self):
+        return self._vol_z
+
+    @vol_z.setter
+    def vol_z(self, value):
+        ex_msg = "The volume Z can only be assigned at object creation."
+        raise VolumeException(ex_msg)
+
+    # --- volume --- get/set
+    @property
+    def volume(self):
+        return self._volume
+
+    @volume.setter
+    def volume(self, value):
+        ex_msg = "The volume can only be assigned at object creation."
+        raise VolumeException(ex_msg)
+
+    # --- shape --- get/set
+    @property
+    def shape(self):
+        return self._shape
+
+    @shape.setter
+    def shape(self, value):
+        ex_msg = "The shape can only be assigned at object creation."
+        raise VolumeException(ex_msg)
+
+    # --- Methods --------------------------------------------------------------
 
     pass  # END of CLASS
 
@@ -290,6 +384,9 @@ class SeatsException(Exception):
 class Seats(object):
     """
     Add seats to the object, and the necessary methods to manage the seats.
+
+    For simplicity (for now) seats only check for capacity and not volume or size.
+
     """
 
     # --- Constructor ----------------------------------------------------------
@@ -297,6 +394,7 @@ class Seats(object):
         self._seats = seats
         self._occupants = {}
         self._free_seats = seats
+        self._total_mass = 0
 
     # --- Properties -----------------------------------------------------------
     # --- seats --- get/set
@@ -333,15 +431,42 @@ class Seats(object):
         ex_msg = "Free-seats can only be modified with the respective methods"
         raise SeatsException(ex_msg)
 
+    # --- total_mass --- get/ser
+    @property
+    def total_mass(self):
+        return self._total_mass
+
+    @total_mass.setter
+    def total_mass(self, value):
+        ex_msg = "The total mass of the seat con ONLY by calculated, not assigned."
+        raise SeatsException(ex_msg)
+
     # --- Methods --------------------------------------------------------------
+
+    def update_total_mass(self):
+        """
+        Update de mass of the seats.
+
+        """
+
+        temp_mass = 0
+        for o_name, obj in self._occupants.items():
+            temp_mass += obj.db.obj_mass.mass
+
+        self._total_mass = temp_mass
 
     def at_enter_seat(self, obj):
         """
-        Add an object to the seat, if there are free seats.
+        Add the object to the seat (if there are space) in a form of a dictionary.
+
+            obj_name: object
+
         """
         if self._free_seats > 0:
             self._free_seats -= 1
             self._occupants[obj.name] = obj
+
+            self.update_total_mass()
         else:
             ex_message = "Not enough free seats in the object."
             raise SeatsException(ex_message)
@@ -349,6 +474,7 @@ class Seats(object):
     def at_leave_seat(self, obj):
         """
         Remove and object from the seat, if it is in the seats.
+
         """
         if obj not in self._occupants:
             ex_message = "Object not found in seats {}.".format(obj)
@@ -357,9 +483,12 @@ class Seats(object):
             del self._occupants[obj]
             self._free_seats += 1
 
+            self.update_total_mass()
+
     def clear_seats(self):
         """
         Clear all the occupants and set the free seats to default value.
+
         """
 
         self._occupants.clear()
@@ -389,17 +518,31 @@ class PartsException(Exception):
 class Parts(object):
     """
     Set the parts of the object.
+
     """
 
     def __init__(self, parts):
         self._parts = []
+        self._total_mass = 0
 
         for key, value in parts.items():
             temp_obj = Part(key, value)
             self._parts.append(temp_obj)
             del temp_obj
 
+        self.update_total_mass()
+
     # --- Properties -----------------------------------------------------------
+    # --- parts --- get/set
+    @property
+    def total_mass(self):
+        return self._total_mass
+
+    @total_mass.setter
+    def total_mass(self, value):
+        ex_msg = "Total Mass can ONLY by calculated, not assigned."
+        raise PartsException(ex_msg)
+
     # --- parts --- get/set
     @property
     def parts(self):
@@ -413,7 +556,24 @@ class Parts(object):
     # --- Methods --------------------------------------------------------------
 
     def parts_amount(self):
+        """
+        Return the amount of parts of the object.
+
+        """
+
         return len(self._parts)
+
+    def update_total_mass(self):
+        """
+        Update the total mass of the parts.
+
+        """
+
+        temp_mass = 0
+        for part in self._parts:
+            temp_mass += part.part_mass
+
+        self._total_mass = temp_mass
 
     pass  # END of CLASS
 
@@ -596,7 +756,7 @@ class Stackable(object):
         self._can_stack = can_stack
         self._max_stack = max_stack
         self._actual_stack = 1
-        self._mass_stack = 0.0
+        self._total_mass = 0
 
     # --- Properties -----------------------------------------------------------
     # --- obj_class --- get/set
@@ -652,31 +812,31 @@ class Stackable(object):
         ex_msg = "The actual stack space is calculated when add/remove objects."
         raise StackableException(ex_msg)
 
-    # --- mass_stack --- get/set
+    # --- total_mass --- get/set
     @property
-    def mass_stack(self):
-        return self._mass_stack
+    def total_mass(self):
+        return self._total_mass
 
-    @mass_stack.setter
-    def mass_stack(self, value):
-        ex_msg = "The total mass of the stack is calculated when add/remove objects."
+    @total_mass.setter
+    def total_mass(self, value):
+        ex_msg = "The Total Mass of the stack is calculated when add/remove objects."
         raise StackableException(ex_msg)
 
     # --- Methods --------------------------------------------------------------
 
-    def update_stack(self):
+    def update_total_mass(self):
         """
-        Update the mass of the tack.
+        Update the total mass of the stack.
 
         """
         if self._actual_stack == 1:
-            self._mass_stack = 0.0
+            self._total_mass = 0
         else:
-            temp_mass = 0.0
+            temp_mass = 0
             for obj in range(self._actual_stack):
                 temp_mass += self._obj_stack.db.obj_mass.mass
 
-            self._mass_stack = temp_mass
+            self._total_mass = temp_mass
 
     def add_stack(self, obj):
         """
@@ -698,7 +858,7 @@ class Stackable(object):
                 if not ((a_stk + o_stk) > self._max_stack):
                     self._obj_stack = obj
                     self._actual_stack += obj.db.obj_stack.actual_stack
-                    self.update_stack()
+                    self.update_total_mass()
 
                     response = 'True'
                 else:
@@ -725,7 +885,7 @@ class Stackable(object):
 
         if not ((a_stk - r_stk) < 1):
             self._actual_stack -= r_stk
-            self.update_stack()
+            self.update_total_mass()
 
             response = True
 
@@ -743,7 +903,9 @@ class Stackable(object):
 
         """
 
-        self._actual_stack = 0                                                  # super easy!
+        self._actual_stack = 1
+        self._mass_stack = 0.0
+        self._obj_stack = None
 
     pass  # END of CLASS
 
@@ -785,23 +947,45 @@ class Slots(object):
 
     # --- Constructor ----------------------------------------------------------
     def __init__(self, s_dict):
-        self._obj_slots = []
+        self._slots = []
+        self._total_mass = 0
 
         for key, values in s_dict.items():
-            self._obj_slots.append(Slot(key, values))
+            self._slots.append(Slot(key, values))
 
     # --- Properties -----------------------------------------------------------
     # --- obj_slots --- get/set
     @property
-    def obj_slots(self):
-        return self._obj_slots
+    def slots(self):
+        return self._slots
 
-    @obj_slots.setter
-    def obj_slots(self, value):
+    @slots.setter
+    def slots(self, value):
         ex_msg = "The Slots can ONLY be set at object creation."
         raise SlotsException(ex_msg)
 
+    # --- total_mass --- get/set
+    @property
+    def total_mass(self):
+        return self._total_mass
+
+    @total_mass.setter
+    def total_mass(self, value):
+        ex_msg = "The Total Mass can ONLY be calculated, not assigned."
+        raise SlotsException(ex_msg)
+
     # --- Methods --------------------------------------------------------------
+
+    def update_total_mass(self):
+        """
+        Update the total mass of the slots.
+
+        """
+        temp_mass = 0
+        for obj in self._slots:
+            temp_mass += obj.mass
+
+        self._total_mass = temp_mass
 
     def has_slots(self):
         """
@@ -809,18 +993,21 @@ class Slots(object):
 
         """
 
-        return bool(self._obj_slots)
+        return bool(self._slots)
 
     def free_slots(self):
         """
-        Return a list with the name of the free slots of the object.
+        Return a list of strings of the slots with capacity >= 1.
+
+        Return:
+                slot_name:slot_actual_capacity:slot_actual_volume:slot_actual_mass
 
         """
         temp_free = []
 
-        for slot in self._obj_slots:
-            if slot.free:
-                temp_free.append(slot.name)
+        for slot in self._slots:
+            if slot.capacity >= 1:
+                temp_free.append(slot.name + ':' + str(slot.capacity) + ':' + str(slot.volume) + ':' + str(slot.mass))
             else:
                 pass
 
@@ -828,14 +1015,17 @@ class Slots(object):
 
     def used_slots(self):
         """
-        Return a list with the name of the used slots of the object.
+        Return a list of strings of the used slots of the object.
+
+        Return:
+                slot_name:slot_actual_capacity:slot_actual_volume:slot_actual_mass
 
         """
         temp_used = []
 
-        for slot in self._obj_slots:
-            if not slot.free:
-                temp_used.append(slot.name)
+        for slot in self._slots:
+            if slot.capacity == 0:
+                temp_used.append(slot.name + ':' + str(slot.capacity) + ':' + str(slot.volume) + ':' + str(slot.mass))
             else:
                 pass
 
@@ -845,15 +1035,90 @@ class Slots(object):
         """
         Add an item to the selected Slot, checking if the slot exist and have capacity.
 
-        """
-        pass
+        Return:
+                * True:Name of the slot used.
+                * False:There is not slot by that name.
+                * False:There is no enough capacity in the slot.
+                * False:Not enough volume in the slot.
+                * False:Object exceed the max volume of the slot.
+                * False:Object exceed the max mass of the slot.
+                * False:Object exceed the max capacity of the slot.
 
-    def remove_from_slot(self, s_name, obj):
+        """
+
+        result = ''
+        if s_name in self._slots:                                                               # check if the SLOT EXIST.
+            si = self._slots.index(s_name)                                                      # get the INDEX of the slot.
+
+            s_mc = self._slots[si].max_volume
+            s_mv = self._slots[si].max_capacity
+            s_mm = self._slots[si].max_mass
+            s_v = self._slots[si].volume
+            s_c = self._slots[si].capacity
+            s_m = self._slots[si].mass
+
+            o_m = obj.db.obj_mass.mass
+            o_v = obj.db.obj_volume.volume
+
+            if s_c >= 1:                                                                            # check if the SLOT has CAPACITY for the item.
+                if s_v >= obj.db.obj_volume.volume:                                                 # check if the SLOT has enough VOLUME to hold the item.
+                    if not (o_v + s_v) > s_mv:                                                      # check if the object EXCEED slot VOLUME
+                        if not (o_m + s_m) > s_mm:                                                  # check if the object EXCEED slot MASS
+                            if not(s_c + 1) > s_mc:                                                 # check if the object EXCEED slot CAPACITY
+                                self._slots[si].content = obj
+
+                                self._slots[si].capacity -= 1
+                                self._slots[si].volume += obj.db.obj_volume.volume
+                                self._slots[si].mass += obj.db.obj_mass.mass
+
+                                self.update_total_mass()
+
+                                result = 'True:' + self._slots[si].name                         # ALL OK
+                            else:
+                                result = 'False:Object exceed the max capacity of the slot'
+                        else:
+                            result = 'False:Object exceed the max mass of the slot'
+                    else:
+                        result = 'False:Object exceed the max volume of the slot'
+                else:
+                    result = 'False:Not enough volume in the slot.'
+            else:
+                result = 'False:There is no enough capacity in the slot.'
+        else:
+            result = 'False:There is not slot by that name.'
+
+        return result
+
+    def remove_from_slot(self, s_name, s_obj, new_location):
         """
         Remove an item from the slot, checking if the slot/item exists.
 
+        Return:
+                * True
+                * False:There is not slot by that name.
+                * False:There is not object by that name in the slot.
         """
-        pass
+
+        result = ''
+        if s_name in self._slots:                                                               # check if the SLOT EXIST.
+            si = self._slots.index(s_name)
+
+            slot = self._slots[si].content
+            for obj in slot:                                                                        # iterate through the OBJECTS in the slot.
+                if obj.name == s_obj.name:                                                          # if FIND the object.
+                    oi = slot.index(obj)
+
+                    del slot[oi]
+
+                    self.update_total_mass()
+
+                    result = 'True:' + new_location                                                 # ALL OK
+                else:
+                    result = 'False:There is not object by that name in the slot.'
+        else:
+            result = 'False:There is not slot by that name.'
+
+        return result
 
     pass  # END of CLASS
 
@@ -868,68 +1133,91 @@ class Slot(object):
     # --- Constructor ----------------------------------------------------------
     def __init__(self, s_name, s_attr):
         self._slot_name = s_name
-        self._slot_capacity = s_attr[0]
+        self._slot_max_capacity = s_attr[0]
         self._slot_max_volume = s_attr[1]
-        self._slot_mass = s_attr[2]
+        self._slot_max_mass = s_attr[2]
 
         self._slot_obj = []
-        self._slot_fre = True
+        self._slot_capacity = s_attr[0]
         self._slot_volume = 0.0
+        self._slot_mass = 0
 
     # --- Properties -----------------------------------------------------------
-
+    # --- slot_name --- get/set
     @property
     def name(self):
-        """
-        Return the name of the slot.
-
-        """
-
         return self._slot_name
 
+    @name.setter
+    def name(self, value):
+        ex_msg = "The Slot name can ONLY be set at object creation."
+        raise SlotsException(ex_msg)
+
+    # --- slot_max_capacity --- get/set
     @property
-    def capacity(self):
-        """
-        Return the capacity of the slot.
+    def max_capacity(self):
+        return self._slot_max_capacity
 
-        """
+    @max_capacity.setter
+    def max_capacity(self, value):
+        ex_msg = "The Slot max capacity can ONLY be set at object creation."
+        raise SlotsException(ex_msg)
 
-        return self._slot_capacity
-
+    # --- slot_max_volume --- get/set
     @property
     def max_volume(self):
-        """
-        Return the max volume of the slot.
-
-        """
-
         return self._slot_max_volume
 
+    @max_volume.setter
+    def max_volume(self, value):
+        ex_msg = "The Slot max volume can ONLY be set at object creation."
+        raise SlotsException(ex_msg)
+
+    # --- max_mass --- get/set
+    @property
+    def max_mass(self):
+        return self._slot_max_mass
+
+    @max_mass.setter
+    def max_mass(self, value):
+        ex_msg = "The Slot max mass can ONLY be set at object creation."
+        raise SlotsException(ex_msg)
+
+    # --- slot_obj --- get/set
     @property
     def content(self):
-        """
-        Return a list with the objects attached to the slot.
-
-        """
-
         return self._slot_obj
 
+    @content.setter
+    def content(self, value):
+        self._slot_obj.append(value)
+
+    # --- slot_capacity --- get/set
     @property
-    def free(self):
-        """
-        Return if the slot is free or not.
+    def capacity(self):
+        return self._slot_capacity
 
-        """
-        return self._slot_fre
+    @capacity.setter
+    def capacity(self, value):
+        self._slot_capacity = value
 
+    # --- slot_volume --- get/set
     @property
     def volume(self):
-        """
-        Return the actual volume of the slot.
-
-        """
-
         return self._slot_volume
+
+    @volume.setter
+    def volume(self, value):
+        self._slot_volume = value
+
+    # --- slot_mass --- get/set
+    @property
+    def mass(self):
+        return self._slot_mass
+
+    @mass.setter
+    def mass(self, value):
+        self._slot_mass = value
 
     # --- Methods --------------------------------------------------------------
 
@@ -956,18 +1244,52 @@ class ContainerException(Exception):
 # --- Container class ---
 class Container(object):
     """
-    Container class to set if the object coa store other objects and to manage the size and volume
+    Container class to set if the object con store other objects and to manage the size and volume
     of the container (capacity).
 
     """
 
     # --- Constructor ----------------------------------------------------------
-    def __init__(self, container=False, max_capacity=0, max_volume=0, lock_type='None'):
+    def __init__(self, container=False, max_capacity=0, max_volume=0, max_mass=0, is_open=False, lock_type='None'):
         self._is_container = container
+        self._content = []
+
+        self._lock = Lock(lock_type)
+
         self._max_capacity = max_capacity
         self._max_volume = max_volume
-        self._lock = Lock(lock_type)
-        self._content_mass = 0.0
+        self._max_mass = max_mass
+
+        self._capacity = 0
+        self._volume = 0
+        self._total_mass = 0
+
+        self._is_open = is_open
+
+    # --- Properties -----------------------------------------------------------
+    # --- obj_slots --- get/set
+    @property
+    def total_mass(self):
+        return self._total_mass
+
+    @total_mass.setter
+    def total_mass(self, value):
+        ex_msg = "The Total Mass can ONLY be calculated, not assigned."
+        raise ContainerException(ex_msg)
+
+    # --- Methods --------------------------------------------------------------
+
+    def update_total_mass(self):
+        """
+        Update the total mass of the container.
+
+        """
+
+        temp_mass = 0
+        for obj in self._content:
+            temp_mass += obj.db.obj_mass.mass
+
+        self._total_mass = temp_mass
 
     pass  # END of CLASS
 
