@@ -39,7 +39,7 @@ Materials:
 
 """
 
-PROPERTIES_DICT = {'Flammability': ['FL', True],
+PROPERTIES_DICT = {'Flammable': ['FL', True],
                    'Conductivity': ['CD', 0.0],
                    'Soundproofing': ['SP', 0.0],
                    'Magnetic': ['MG', 0.0],

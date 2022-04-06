@@ -95,8 +95,8 @@ class TestFurniture(EvenniaTest):
         room = create_object(CoC.CoC_Rooms.CoCRoom, key='A room with gravity')
         test_silla = create_object(Chair, key='Old chair', location=room)
 
-        self.assertEqual(1, test_silla.db.obj_seats.seats, "Testing Chair seats attribute.")
-        self.assertEqual(1, test_silla.db.obj_seats.free_seats, "Testing Chair free seats attribute.")
+        self.assertEqual(1, test_silla.db.obj_seats, "Testing Chair seats attribute.")
+        self.assertEqual(1, test_silla.db.obj_seats.free_seats(), "Testing Chair free seats attribute.")
 
     def test_chair_copy(self):
         """

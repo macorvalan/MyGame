@@ -126,7 +126,8 @@ class Chair(CoCFurnitures):
         self.db.obj_container = Container(container=False)                                          # set CONTAINER
 
         # Attributes only for chairs
-        self.db.obj_seats = Seats(1)                                                                # set SEATS
+        seats = {'seat': 1}
+        self.db.obj_seats = Seats(seats)                                                                # set SEATS
         self.db.sub_classes += "S:"
 
         # Extra-Information about the object
@@ -141,6 +142,13 @@ class Chair(CoCFurnitures):
         Update the mass of the object, when necessary.
 
         """
+
+        self.db.obj_slots.update_total_mass()
+        self.db.obj_container.update_total_mass()
+        self.db.obj_stack.update_total_mass()
+        self.db.obj_parts.update_total_mass()
+        self.db.obj_seats.update_total_mass()
+
         slots_mass = self.db.obj_slots.total_mass
         container_mass = self.db.obj_container.total_mass
         stacks_mas = self.db.obj_stack.total_mass
